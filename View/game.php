@@ -12,7 +12,7 @@
   <body class="list-group" ng-controller="GamesController as game">
     <?php include("nav.php"); ?>
     <div class="page-header">
-      <h1 class ="display-3">{{ "Video games proposed"}}</h1>
+      <h1 class ="display-3 text-center">{{ "Video games proposed"}}</h1>
     </div>
 
     <div class="list-group-item" ng-repeat="game in Games.gamesProposed">
