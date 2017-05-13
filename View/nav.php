@@ -4,8 +4,8 @@
       <a class="navbar-brand" href="#">Video Games Tournament</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Results</a></li>
+      <li class="active"><a href="index.php">Home</a></li>
+      <li><a href="/Website/games.php">Video Games</a></li>
       <li><a href="#">Players</a></li>
     </ul>
   </div>
