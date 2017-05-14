@@ -59,6 +59,7 @@
         </fieldset>
 
       </form>
+      <?php include("foot.php"); ?>
     </div>
   </body>
 </html>

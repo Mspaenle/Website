@@ -11,18 +11,19 @@
   </head>
 
   <body class="list-group" ng-controller="GamesController as game">
+
     <?php include("nav.php"); ?>
+
     <div class="page-header">
       <h1 class ="display-3 text-center">{{ "Video games proposed"}}</h1>
     </div>
-
+<div class="container">
     <div class="list-group-item" ng-repeat="game in Games.gamesProposed">
-
       <h3>
         {{game.name}}
         <em class="pull-right">{{game.nbPlayer}}</em>
       </h3>
-      <section ng-show="product.images.length">
+      <section ng-show="game.image">
         <img ng-src="{{game.image}}" />
       </section>
 
@@ -49,5 +50,7 @@
 </div>
       </section>
     </div>
+    <?php include("foot.php"); ?>
+  </div>
   </body>
 </html>

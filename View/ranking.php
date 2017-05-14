@@ -13,5 +13,10 @@
     <div class="page-header">
       <h1 class ="display-3 text-center">{{ "Ranking"}}</h1>
     </div>
+    <div class="container">
+
+      <?php include("foot.php")?>
+    </div>
+
   </body>
 </html>
