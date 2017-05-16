@@ -1,5 +1,5 @@
 <?php
 
-	require_once("/Website/View/index.php");
+	require_once("View/index.php");
 
 ?>
