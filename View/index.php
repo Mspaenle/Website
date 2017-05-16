@@ -28,7 +28,7 @@
     <title> Moys Games </title>
   </head>
 
-      <body class="list-group go-to-top" ng-app='Games' ng-controller="GamesController">
+      <body class="list-group go-to-top" ng-app='Games' ng-controller="GamesController as Games">
 
       <?php include("nav.php"); ?>
 
@@ -49,6 +49,16 @@
               <div class="col-lg-12">
                   <h3>Games proposed</h3>
               </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel owl-carousel-fullwidth">
+                  <div class="item"><img src="{{Games.images[0]}}" alt="image"></div>
+                  <div class="item"><img src="{{Games.images[1]}}" alt="image"></div>
+                  <div class="item"><img src="{{Games.images[2]}}" alt="image"></div>
+              </div>
+            </div>
           </div>
 
           <div class="row text-center" ng-repeat="game in Games.gamesProposed">
