@@ -27,7 +27,7 @@
     <title> Moys Games </title>
   </head>
 
-      <body class="list-group" ng-app='Games' ng-controller="GamesController">
+      <body class="list-group go-to-top" ng-app='Games' ng-controller="GamesController">
 
       <?php include("nav.php"); ?>
 
