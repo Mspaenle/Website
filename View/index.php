@@ -20,6 +20,7 @@
 	<!-- Theme Style -->
 	<link rel="stylesheet" href="View/relic/css/style.css">
 
+	<link rel="stylesheet" href="View/style.css">
 
 
     <script type="text/javascript" src="View/angular.min.js"></script>
@@ -33,11 +34,14 @@
 
       <div class="container">
 
-        <header id="fh5co-header" role="banner">
-          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
-          <div id="fh5co-logo" class="text-center"><a href="index.html">{{Welcome}}</a></div>
-        </header>
 
+
+          <header class="jumbotron hero-spacer">
+              <h1>Welcome</h1>
+              <p>Come here whenever you want to organize a video game tournament with your friends.</p>
+              <p><a class="btn btn-primary btn-large" href="newParty.php">Start a tournament</a>
+              </p>
+          </header>
 
           <hr>
 
