@@ -34,42 +34,19 @@
     <div class="page-header">
       <h1 class ="display-3 text-center">{{ "Video games proposed"}}</h1>
     </div>
-<div class="container">
-    <div class="list-group-item" ng-repeat="game in Games.gamesProposed">
-      <h3>
-        {{game.name}}
-        <em class="pull-right">{{game.nbPlayer}}</em>
-      </h3>
-      <section ng-show="game.image">
-        <img ng-src="{{game.image}}" />
-      </section>
 
-      <section class="tab" ng-controller="TabController as tab">
-<ul class="nav nav-pills">
-  <li ng-class="{ active: tab.isSet(1) }">
-    <a href ng-click="tab.setTab(1)">Description</a></li>
-  <li ng-class="{ active: tab.isSet(2) }">
-    <a href ng-click="tab.setTab(2)">More infos</a></li>
-  <li ng-class="{ active: tab.isSet(3) }">
-    <a href ng-click="tab.setTab(3)">Play</a></li>
-</ul>
-
-<div ng-show="tab.isSet(1)">
-  <h4>Description</h4>*
-  <blockquote>{{game.description}}</blockquote>
-</div>
-<div ng-show="tab.isSet(2)">
-  <h4>More infos</h4>
-  <blockquote>{{game.options}}</blockquote>
-</div>
-<div ng-show="tab.isSet(3)">
-  <h4>Play</h4>
-</div>
-      </section>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="owl-carousel owl-carousel-fullwidth">
+            <div class="item"><img src="{{Games.images[0]}}" alt="image"></div>
+            <div class="item"><img src="{{Games.images[1]}}" alt="image"></div>
+            <div class="item"><img src="{{Games.images[2]}}" alt="image"></div>
+        </div>
+      </div>
     </div>
-    <?php include("foot.php"); ?>
-  </div>
 
+
+    <?php include("foot.php"); ?>
 
 
   		<!-- jQuery -->

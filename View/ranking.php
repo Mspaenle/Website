@@ -40,21 +40,6 @@
           <h2 class="text-muted">Our Cool Office</h2>
           <h3 class="text-center">Visit us and have a cup of coffee</h3>
         </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="owl-carousel owl-carousel-fullwidth">
-                <div class="item"><img src="images/img_large_1.jpg" alt="image"></div>
-                <div class="item"><img src="images/img_large_2.jpg" alt="image"></div>
-                <div class="item"><img src="images/img_large_3.jpg" alt="image"></div>
-                <div class="item"><img src="images/img_large_4.jpg" alt="image"></div>
-                <div class="item"><img src="images/img_large_5.jpg" alt="image"></div>
-                <div class="item"><img src="images/img_large_6.jpg" alt="image"></div>
-                <div class="item"><img src="images/img_large_7.jpg" alt="image"></div>
-
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 

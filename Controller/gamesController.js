@@ -2,6 +2,7 @@
   var app = angular.module('Games', []);
   app.controller('GamesController', function(){
     this.gamesProposed = listGames;
+    this.images = listImages;
   });
 
   app.controller('TabController', function(){
@@ -37,4 +38,6 @@
       options: ["Individually", "by Team"],
       image: "images/MarioParty.jpeg"
     }];
+
+  var listImages = ["images/Fifa17.jpeg","images/MarioKart.jpeg","images/MarioParty.jpeg"];
 })();
