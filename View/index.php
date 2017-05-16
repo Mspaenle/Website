@@ -2,7 +2,6 @@
 <html >
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="View/relic/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/relic/css/heroic-features.css" />
 
     <!-- Google Webfont -->
