@@ -51,16 +51,6 @@
               </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <div class="owl-carousel owl-carousel-fullwidth">
-                  <div class="item"><img src="{{.images[0]}}" alt="image"></div>
-                  <div class="item"><img src="{{Games.images[1]}}" alt="image"></div>
-                  <div class="item"><img src="{{Games.images[2]}}" alt="image"></div>
-              </div>
-            </div>
-          </div>
-
           <div class="row text-center" ng-repeat="game in Games.gamesProposed">
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
@@ -68,7 +58,6 @@
                       <div class="caption">
                           <h3>{{game.name}}</h3>
                           <p>{{game.description}}</p>
-                          {{game.image}}
                           <p>
                               <a href="games.php" class="btn btn-primary">More info</a> <a href="#" class="btn btn-default">More Info</a>
                           </p>
