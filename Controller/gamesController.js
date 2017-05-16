@@ -1,4 +1,3 @@
-(function() {
   var app = angular.module('Games', []);
   app.controller('GamesController', function(){
     $scope.gamesProposed = listGames;
@@ -37,4 +36,3 @@
       options: ["Individually", "by Team"],
       image: "images/MarioParty.jpeg"
     }];
-})();
