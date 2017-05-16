@@ -42,7 +42,7 @@ app.controller('GamesController', function(){
 
 
 
-    <body class="list-group" ng-app='Games' ng-controller="GamesController as game">
+    <body class="list-group" ng-app='Games' ng-controller="GamesController">
 
       <?php include("nav.php"); ?>
 
@@ -63,7 +63,7 @@ app.controller('GamesController', function(){
               </div>
           </div>
 
-          <div class="row text-center" ng-repeat="game in Games.game">
+          <div class="row text-center" ng-repeat="game in Games.gamesProposed">
               <div class="col-md-3 col-sm-6 hero-feature">
                   <div class="thumbnail">
                       <img src="{{game.image}}" alt="">

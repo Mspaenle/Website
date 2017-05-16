@@ -10,7 +10,7 @@
     <title> Games </title>
   </head>
 
-  <body class="list-group" ng-controller="GamesController as game">
+  <body class="list-group" ng-controller="GamesController">
 
     <?php include("nav.php"); ?>
 
