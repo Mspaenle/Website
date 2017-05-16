@@ -1,6 +1,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navigationBar">
-  <div class="fh5co-nav-overlay"></div>
-  <div class="fh5co-nav-inner">
+  <div id="fh5co-main-nav-wrap">
+    <div class="container">
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbarColl" href="index.php">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -18,6 +19,7 @@
             </ul>
         </div>
     </div>
+  </div>
 </nav>
 
 

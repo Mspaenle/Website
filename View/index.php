@@ -11,7 +11,7 @@
 	<!-- FontAwesome Icons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="View/relic/css/bootstrap.css">
+	<link rel="stylesheet" href="View/relic/css/bootstrap.min.css">
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="View/relic/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
