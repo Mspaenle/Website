@@ -1,16 +1,17 @@
+(function() {
   var app = angular.module('Games', []);
   app.controller('GamesController', function(){
-    $scope.gamesProposed = listGames;
+    this.gamesProposed = listGames;
   });
 
   app.controller('TabController', function(){
-    $scope.tab = 1;
-    $scope.setTab = function(newValue){
-      $scope.tab = newValue;
+    this.tab = 1;
+    this.setTab = function(newValue){
+      this.tab = newValue;
     };
 
-    $scope.isSet = function(tabName){
-      return $scope.tab === tabName;
+    this.isSet = function(tabName){
+      return this.tab === tabName;
     };
   });
 
@@ -36,3 +37,4 @@
       options: ["Individually", "by Team"],
       image: "images/MarioParty.jpeg"
     }];
+})();
