@@ -57,6 +57,7 @@
                       <img src="{{game.image}}" alt="">
                       <div class="caption">
                           <h3>{{game.name}}</h3>
+                          {{game.image}}
                           <p>{{game.description}}</p>
                           <p>
                               <a href="games.php" class="btn btn-primary">More info</a> <a href="#" class="btn btn-default">More Info</a>
