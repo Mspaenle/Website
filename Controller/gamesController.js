@@ -1,21 +1,21 @@
 (function() {
   var app = angular.module('Games', []);
   app.controller('GamesController', function(){
-    $scope.gamesProposed = listGames;
+    this.gamesProposed = listGames;
   });
 
   app.controller('TabController', function(){
-    $scope.tab = 1;
-    $scope.setTab = function(newValue){
-    $scope.tab = newValue;
+    this.tab = 1;
+    this.setTab = function(newValue){
+    this.tab = newValue;
     };
 
-    $scope.isSet = function(tabName){
-      return $scope.tab === tabName;
+    this.isSet = function(tabName){
+      return this.tab === tabName;
     };
   });
 
-  $scope.listGames = [
+  this.listGames = [
     {
       name: 'Fifa17',
       description: "FIFA, also known as FIFA Football or FIFA Soccer, is a series of association football video games or football simulator, released annually by Electronic Arts under the EA Sports label. While there was no major competition when EA released the first titles in their Madden NFL and NHL series, football video games such as Sensible Soccer, Kick Off and Match Day had been developed since the late 1980s and already competitive in the games market when EA Sports announced a football game as the next addition to their EA Sports label.",
