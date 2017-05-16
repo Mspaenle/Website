@@ -34,15 +34,6 @@
       <h1 class ="display-3 text-center">{{ "Ranking"}}</h1>
     </div>
 
-    <div id="js-fh5co-slider">
-      <div class="container">
-        <div class="fh5co-section-heading">
-          <h2 class="text-muted">Our Cool Office</h2>
-          <h3 class="text-center">Visit us and have a cup of coffee</h3>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
       <?php include("foot.php")?>
     </div>

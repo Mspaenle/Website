@@ -33,12 +33,11 @@
 
       <div class="container">
 
-          <header class="jumbotron hero-spacer">
-              <h1>Welcome</h1>
-              <p>Come here whenever you want to organize a video game tournament with your friends.</p>
-              <p><a class="btn btn-primary btn-large" href="newParty.php">Start a tournament</a>
-              </p>
-          </header>
+        <header id="fh5co-header" role="banner">
+          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>
+          <div id="fh5co-logo" class="text-center"><a href="index.html">{{Welcome}}</a></div>
+        </header>
+
 
           <hr>
 
