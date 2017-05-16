@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navigationBar">
+<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navigationBar">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbarColl" href="index.php">
@@ -18,4 +18,22 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav> -->
+
+
+
+
+
+<!-- Navigation -->
+<div id="fh5co-main-nav-wrap">
+  <div class="fh5co-nav-overlay"></div>
+  <div class="fh5co-nav-inner">
+    <ul id="fh5co-main-nav">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="games.php">Video Games</a></li>
+      <li><a href="ranking.php">Ranking</a></li>
+      <li><a href="newParty.php">Start a tournament</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Navigation -->
