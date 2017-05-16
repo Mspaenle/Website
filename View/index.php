@@ -17,7 +17,7 @@
 
           <header class="jumbotron hero-spacer">
               <h1>Welcome</h1>
-              <p>You can come here whenever you want to organise a video game tournament with your friends.</p>
+              <p>You can come here whenever you want to organize a video game tournament with your friends.</p>
               <p><a class="btn btn-primary btn-large" href="newParty.php">Start a tournament</a>
               </p>
           </header>
