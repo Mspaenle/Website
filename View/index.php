@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="View/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/bootstrap-3.3.7-dist/css/heroic-features.css" />
     <script type="text/javascript" src="View/angular.min.js"></script>
-    <script type="text/javascript" src="View/app.js"></script>
     <script src="Controller/gamesController.js"></script>
     <title> Home </title>
   </head>
