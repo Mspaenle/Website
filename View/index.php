@@ -45,7 +45,7 @@
 
           <hr>
 
-          <div >
+          <div>
               <div class="col-lg-12">
                   <h3>Games proposed</h3>
               </div>

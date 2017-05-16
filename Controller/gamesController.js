@@ -39,4 +39,5 @@
       image: "images/MarioParty.jpeg"
     }];
 
+  var listImages = ["images/Fifa17.jpeg","images/MarioKart.jpeg","images/MarioParty.jpeg"];
 })();
