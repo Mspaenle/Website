@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='videoGames'>
+<html ng-app='Games'>
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="View/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
