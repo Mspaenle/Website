@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="View/relic/css/magnific-popup.css">
 	<!-- Easy Responsive Tabs -->
 	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="View/relic/css/style.css">
 
 	<link rel="stylesheet" href="View/style.css">
 
