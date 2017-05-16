@@ -25,6 +25,7 @@
 
 
 <!-- Navigation -->
+<nav>
 <div id="fh5co-main-nav-wrap">
   <div class="fh5co-nav-overlay"></div>
   <div class="fh5co-nav-inner">
@@ -36,4 +37,5 @@
     </ul>
   </div>
 </div>
+</nav>
 <!-- Navigation -->
