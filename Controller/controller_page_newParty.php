@@ -1,5 +1,5 @@
 <?php
 
-	require_once("Website/View/newParty.php");
+	require_once("View/newParty.php");
 
 ?>
