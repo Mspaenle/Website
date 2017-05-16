@@ -1,7 +1,7 @@
 /*
 //////////////////////////////////////////////////////
 
-FREE HTML5 TEMPLATE 
+FREE HTML5 TEMPLATE
 DESIGNED & DEVELOPED by FREEHTML5.CO
 
 //////////////////////////////////////////////////////
@@ -17,7 +17,7 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 14px;
   line-height: 24px;
-  color: #2e2e2e;
+  background-image: url("../../images/retroban.jpg")
 }
 
 ::-webkit-selection {
@@ -646,10 +646,10 @@ footer .fh5co-footer-social li a {
   z-index: 21;
 }
 
-/* 
+/*
 ========================================
 
-Components 
+Components
 
 ========================================
 */
