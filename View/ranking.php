@@ -5,8 +5,6 @@
     <link rel="stylesheet" type="text/css" href="View/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/relic/css/heroic-features.css" />
 
-    <!-- Google Webfont -->
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<!-- Themify Icons -->
 	<link rel="stylesheet" href="View/relic/css/themify-icons.css">
 	<!-- FontAwesome Icons -->
