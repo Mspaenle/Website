@@ -1,17 +1,17 @@
 (function() {
   var app = angular.module('Games', []);
   app.controller('GamesController', function(){
-    this.gamesProposed = listGames;
+    $scope.gamesProposed = listGames;
   });
 
   app.controller('TabController', function(){
-    this.tab = 1;
-    this.setTab = function(newValue){
-      this.tab = newValue;
+    $scope.tab = 1;
+    $scope.setTab = function(newValue){
+      $scope.tab = newValue;
     };
 
-    this.isSet = function(tabName){
-      return this.tab === tabName;
+    $scope.isSet = function(tabName){
+      return $scope.tab === tabName;
     };
   });
 
