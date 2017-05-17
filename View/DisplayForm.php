@@ -15,6 +15,35 @@
     <script type="text/javascript" src="View/angular.min.js"></script>
     <script type="text/javascript" src="Controller/gamesController.js"></script>
     <title> Players </title>
+
+    <script type="text/javascript">
+
+                var i = 0;
+
+                function addKid(j)
+                {
+                    if (i < j)
+                    {
+                        var newRow = document.createElement('tr');
+
+                        newRow.innerHTML = '<td> <input type="text" name="PlayerName_'+i+'" ><td> <input type="text" name="PlayerNumber_'+i+'" ></td>';
+
+                        document.getElementById('players').appendChild(newRow);
+                        i++;
+                    }
+                }
+
+                function removeKid(element)
+                {
+                    document.getElementById('players').removeChild(element.parentNode);
+                    i--;
+                }
+
+      </script>
+
+
+
+
   </head>
 
   <body>
@@ -27,16 +56,26 @@
 
 <form action="ResultForm.php">
 
-<?php
-
-for($i=0;$i<$nbPlayers;$i++){
-  echo "<input type='text' name='date_entree[".$i."]'/>";
-
-  echo "<input type='hidden' name='nbPlayers' value='".$i."'/>";
- }?>
-
-<input type="submit" name="button"  value="Next" class="btn btn-default" />
-
+  <table border="1" id="players">
+              <tr>
+                  <th>Nom Joueur</th>
+                  <th>Numéro Joueur</th>
+              </tr>
+              <tbody  >
+                  <tr >
+                      <td  >
+                          <input type="text" name="Designation">
+                      </td>
+                      <td>
+                          <input type="text" name="Serie">
+                      </td>
+                      <td>
+                          <input type="button" id="add_players(4)" onClick="addKid()" value="+" />
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          <input type="submit" value="Submit" class="btn btn-default">
  </form>
 
     <div class="container">
