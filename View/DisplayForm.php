@@ -32,7 +32,7 @@
 for($i=0;$i<$nbPlayers;$i++){
   echo "<input type='text' name='date_entree[".$i."]'/>";
 
-  echo "<input type='hidden' name='nbPlayers' value='".$nbChamps."'/>";
+  echo "<input type='hidden' name='nbPlayers' value='".$i."'/>";
  }?>
 
 <input type="submit" name="button"  value="Next" class="btn btn-default" />

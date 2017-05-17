@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class ="form-group">
+        <div class ="form-group row">
           <label for="game"  class="col-sm-2 col-form-label">Which game do you want to play ?</label>
           <div class="col-sm-10">
             <select id="game" class="form-control">
@@ -65,7 +65,7 @@
               <input class="form-check-input" type="radio" name="typeParty" id="solo" value="solo">
               Individual
             </label>
-            <label class="form-check-label row">
+            <label class="form-check-label ">
               <input class="form-check-input" type="radio" name="typeParty" id="team" value="team">
               By Team
             </label>
