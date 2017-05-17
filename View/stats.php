@@ -19,7 +19,7 @@
   	<!-- Theme Style -->
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
-    <title> Party Engaged </title>
+    <title> Hightlight </title>
   </head>
 
   <body>
@@ -27,11 +27,8 @@
     <?php include("nav.php"); ?>
 <div class="center-w">
     <div class="page-header">
-      <h1 class ="display-3 text-center">Party <?php echo $Party;?></h1>
+      <h1 class ="display-3 text-center">Who won ?</h1>
     </div>
-
-
- <a href="stats.php" class="btn btn-default">Finish</a>
 
 
     <div class="container">

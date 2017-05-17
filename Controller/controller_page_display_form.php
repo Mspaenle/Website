@@ -1,7 +1,7 @@
 <?php
 
 	$Party = $_POST['pName'];
-	setcookie("party", $Party, time()+(3600),"/");
+	setcookie("party", $Party, time()+(3600*24),"/");
 
 	$Game = $_POST['game'];
 
