@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='GamesPlayers'>
+<html >
 
   <head>
     <meta charset="utf-8" />
@@ -27,7 +27,7 @@
     <title> Start a new tournament </title>
   </head>
 
-  <body  ng-controller="PlayersController as PGames">
+  <body  ng-app='GamesPlayers' ng-controller="PlayersController as PGames">
 
     <?php include("nav.php"); ?>
 
@@ -36,7 +36,7 @@
     </div>
 
     <div class ="container">
-      <form>
+      <form action="DisplayFrom.php">
         <div class ="form-group row">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
           <div class="col-sm-10">
@@ -76,7 +76,7 @@
             </label>
           </div>
         </fieldset>
-
+        <input type="submit" value="Submit" class="btn btn-default">
       </form>
       <?php include("foot.php"); ?>
     </div>
