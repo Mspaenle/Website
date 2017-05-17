@@ -19,7 +19,7 @@
   	<!-- Theme Style -->
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
-    <title> Current Party </title>
+    <title> Admin log-in </title>
   </head>
 
   <body>
@@ -27,45 +27,25 @@
     <?php include("nav.php"); ?>
 <div class="center-w">
     <div class="page-header">
-      <h1 class ="display-3 text-center">Current Party</h1>
-      <h2 class="display-2 text-center"><?php echo $Party;?></h2>
+      <h1 class ="display-3 text-center">Log-in as an admin</h1>
     </div>
 
-    <table class="table table-hover rankTab">
-    	<thead>
-    		<tr>
-    			<th > Number </th>
-    			<th> Name </th>
-    			<th> Current score </th>
-    			<th> New score </th>
-    		</tr>
-    	</thead>
-
-    	<tbody>
-    		<?php
-
-
-    		while($donnees = $answer->fetch())
-    		{
-    		?>
-    		<tr>
-    			 <td> <?php echo $donnees['number']; ?></td>
-    			<td> <?php echo $donnees['name']; ?></td>
-    			<td> <?php echo $donnees['scoreP']; ?></td>
-          <?php $i=$donnees['number']; ?>
-    			<td> <input type="text" name="score<?php $donnees['number']; ?>" value =<?php $donnees['number']; ?>> </td>
-    		</tr>
-    		<?php
-    		}
-    		$answer->closeCursor();
-    		?>
-
-    </table>
-
+<div class="center-w">
 
     <div class="container">
-      <?php include("foot.php")?>
+      <form method="post" action="add_game.php">
+        <label for="admin-log-in" class="col-sm-2 col-form-label"> Administrator password</label>
+        <div class="col-sm-10 col-md-8 col-lg-8">
+          <input type="password" class="form-control" name="nbPlayers" required>
+        </div>
+        <input type="submit" value="Log-in" class="btn btn-default">
+      </form>
     </div>
+
+    <div class="container">
+      <?php include("foot.php") ; ?>
+    </div>
+
 </div>
 
     		<!-- jQuery -->

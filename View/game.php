@@ -12,6 +12,9 @@
   	<!-- Owl Carousel -->
   	<link rel="stylesheet" href="View/css/owl.carousel.min.css">
   	<link rel="stylesheet" href="View/css/owl.theme.default.min.css">
+
+  	<!-- FontAwesome Icons -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   	<!-- Magnific Popup -->
   	<link rel="stylesheet" href="View/css/magnific-popup.css">
   	<!-- Easy Responsive Tabs -->

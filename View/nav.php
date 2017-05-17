@@ -16,6 +16,7 @@
               <li><a href="ranking.php">Ranking</a></li>
               <li><a href="newParty.php">Start a tournament</a></li>
               <li><a href="current_party.php">Current party</a></li>
+              <li><a href="admin.php">Add a game</a></li>
             </ul>
         </div>
     </div>
