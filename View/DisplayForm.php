@@ -13,7 +13,7 @@
   	<!-- Easy Responsive Tabs -->
   	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
   	<link rel="stylesheet" href="View/style.css">
-    <script type="text/javascript" src="View/js/playeTable.js"></script>
+    <script type="text/javascript" src="View/js/playerTable.js"></script>
     <title> Players </title>
 
   </head>
