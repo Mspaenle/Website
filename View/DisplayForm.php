@@ -27,8 +27,8 @@
     </div>
 
 <form action="ResultForm.php">
-
-  <table border="1" id="players" classe="table-hover">
+<div class="container">
+  <table border="1" id="players" classe="table table-hover">
               <tr>
                   <th>Nom Joueur</th>
                   <th>Numéro Joueur</th>
@@ -43,13 +43,15 @@
                       </td>
                       <td>
                         <?php $i = $nbPlayers; ?>
-                          <input type="button" id="add_players()" onClick="addKid(<?php echo $i;?>)" value="+" />
-
+                        <?php while($i>0){?>
+                          <input type="button" id="add_players()" onClick="addKid()" value="+" />
+                          <?php $i--;?>
                       </td>
                   </tr>
               </tbody>
           </table>
           <input type="submit" value="Submit" class="btn btn-default">
+        </div>
  </form>
 
     <div class="container">
