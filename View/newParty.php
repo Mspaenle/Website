@@ -43,7 +43,7 @@
         <div class ="form-group row">
           <label for="game"  class="col-sm-2 col-form-label">Which game do you want to play ?</label>
           <div class="col-sm-10">
-            <select name="game" class="form-control">
+            <select name="game" class="form-control" required>
               <option value="fifa17">Fifa 17</option>
               <option value="marioParty">Mario Party</option>
               <option value="marioKart">Mario Kart</option>
@@ -55,7 +55,7 @@
           <div class ="form-group row">
             <label for="numberPlayers" class="col-sm-2 col-form-label">Number of players :</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="nbPlayers" placeholder="From 2 to 16">
+              <input type="text" class="form-control" name="nbPlayers" placeholder="From 2 to 16" required>
             </div>
           </div>
 <hr>

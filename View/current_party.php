@@ -19,7 +19,7 @@
   	<!-- Theme Style -->
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
-    <title> Party Engaged </title>
+    <title> Current Party </title>
   </head>
 
   <body>
@@ -27,9 +27,10 @@
     <?php include("nav.php"); ?>
 <div class="center-w">
     <div class="page-header">
-      <h1 class ="display-3 text-center">Party <?php echo $Party;?></h1>
+      <h1 class ="display-3 text-center">Current Party</h1>
+      <h2 class="display-2 tex-center"><?php echo $Party;?></h2>
     </div>
-<form cible="current_party.php">
+
     <table class="table table-hover">
     	<thead>
     		<tr>
@@ -60,11 +61,6 @@
     		?>
 
     </table>
-
-    <input type="submit" value="Update" class="btn btn-default">
-</form>
-
- <a href="stats.php" class="btn btn-default">Finish</a>
 
 
     <div class="container">
