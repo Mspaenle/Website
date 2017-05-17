@@ -45,14 +45,14 @@
 
           <hr>
 
-          <div>
+          <!--<div class="row">
               <div class="col-lg-12">
                   <h3>Games proposed</h3>
               </div>
           </div>
 
           <div class="row text-center" ng-repeat="game in Games.gamesProposed">
-              <div class=" hero-feature"><!-- col-md-3 col-sm-6 -->
+              <div class=" hero-feature"> col-md-3 col-sm-6
                   <div class="thumbnail">
                       <img src="{{game.image}}" alt="">
                       <div class="caption">
@@ -65,8 +65,35 @@
                       </div>
                   </div>
               </div>
-            </div>
+            </div>-->
+            <div id="js-fh5co-slider">
+      				<div class="container">
+      					<div class="fh5co-section-heading">
+      						<h2 class="text-muted">Game Proposed</h2>
+      					</div>
 
+      					<div class="row">
+      						<div class="col-md-12">
+      							<div class="owl-carousel owl-carousel-fullwidth" ng-repeat="game in Games.gamesProposed">
+                      <div class=" hero-feature"> <!--col-md-3 col-sm-6 -->
+                          <div class="thumbnail">
+                              <img src="{{game.image}}" alt="">
+                              <div class="caption">
+                                  <h3>{{game.name}}</h3>
+                                  <img  src="{{game.image}}">
+                                  <p>{{game.description}}</p>
+                                  <p>
+                                      <a href="games.php" class="btn btn-primary">More info</a> <a href="#" class="btn btn-default">More Info</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+
+      							</div>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
           <hr>
 
           <?php include("foot.php"); ?>
