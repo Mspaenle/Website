@@ -51,7 +51,7 @@
         </div>
 
 
-          <div class ="form-group">
+          <div class ="form-group row">
             <label for="numberPlayers" class="col-sm-2 col-form-label">Number of players :</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nbPlayers" placeholder="From 2 to 16">
