@@ -26,11 +26,12 @@
 
     <?php include("nav.php"); ?>
 
-    <div class="page-header center-w">
+<div class="center-w">
+    <div class="page-header">
       <h1 class ="display-3 text-center">Start a new party</h1>
     </div>
 
-    <div class ="container center-w">
+    <div class ="container">
       <form action="DisplayForm.php" method="post">
         <div class ="form-group row">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
@@ -73,6 +74,10 @@
         </fieldset>
         <input type="submit" value="Submit" class="btn btn-default">
       </form>
+    </div>
+</div>
+
+    <div class="container">
       <?php include("foot.php"); ?>
     </div>
 

@@ -55,12 +55,12 @@
   <body>
 
     <?php include("nav.php"); ?>
-
-    <div class="page-header center-w">
+<div class="center-w">
+    <div class="page-header">
       <h1 class ="display-3 text-center">Players <?php echo $_POST['nbPlayers']; ?></h1>
     </div>
 
-<div class="container center-w">
+<div class="container">
 <form action="ResultForm.php">
 
   <table border="1" id="players" classe="table-hover">
@@ -87,7 +87,7 @@
           <input type="submit" value="Submit" class="btn btn-default">
  </form>
  </div>
-
+</div>
     <div class="container">
       <?php include("foot.php")?>
     </div>

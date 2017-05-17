@@ -25,8 +25,8 @@
   <body>
 
     <?php include("nav.php"); ?>
-
-    <div class="page-header center-w">
+<div class="center-w">
+    <div class="page-header">
       <h1 class ="display-3 text-center">Ranking</h1>
     </div>
 
@@ -34,7 +34,7 @@
     <div class="container">
       <?php include("foot.php")?>
     </div>
-
+</div>
 
     		<!-- jQuery -->
     		<script src="View/relic/js/jquery-1.10.2.min.js"></script>

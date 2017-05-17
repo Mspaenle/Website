@@ -25,7 +25,7 @@
       <body class="list-group go-to-top">
 
       <?php include("nav.php"); ?>
-
+<div class="center-w">
       <div class="container">
 
 
@@ -70,6 +70,8 @@
       				</div>
       			</div>
           <hr>
+
+        </div>
 
           <?php include("foot.php"); ?>
 
