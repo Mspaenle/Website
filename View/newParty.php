@@ -32,7 +32,7 @@
     </div>
 
     <div class ="container">
-      <form action="DisplayFrom.php">
+      <form action="DisplayForm.php">
         <div class ="form-group row">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
           <div class="col-sm-10">
@@ -58,7 +58,7 @@
               <input type="text" class="form-control" id="nbPlayers" placeholder="From 2 to 16">
             </div>
           </div>
-<br>
+<hr>
         <fieldset class="form-group row">
           <label class="col-sm-2 col-form-label">Type of party</label>
           <div class ="form-check">
