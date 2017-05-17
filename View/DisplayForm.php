@@ -51,7 +51,7 @@
     <?php include("nav.php"); ?>
 
     <div class="page-header">
-      <h1 class ="display-3 text-center">Players <?php echo $nbPlayers; ?></h1>
+      <h1 class ="display-3 text-center">Players <?php echo $_POST['nbPlayers']; ?></h1>
     </div>
 
 <form action="ResultForm.php">
