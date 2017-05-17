@@ -34,9 +34,9 @@
       <div class="row">
         <div class="col-md-12">
           <div class="owl-carousel owl-carousel-fullwidth">
-              <div class="item"><img src="{{Games.images[0]}}" alt="image"></div>
-              <div class="item"><img src="{{Games.images[1]}}" alt="image"></div>
-              <div class="item"><img src="{{Games.images[2]}}" alt="image"></div>
+              <div class="item"><img src="images/Fifa17.jpg" alt="image"></div>
+              <div class="item"><img src="images/MarioKart.jpg" alt="image"></div>
+              <div class="item"><img src="images/MarioParty.jpg" alt="image"></div>
           </div>
         </div>
       </div>
