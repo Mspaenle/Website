@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html ng-app='Games'>
+<html>
 
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="View/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/relic/css/heroic-features.css" />
-
-	<!-- Themify Icons -->
-	<link rel="stylesheet" href="View/relic/css/themify-icons.css">
-	<!-- FontAwesome Icons -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="View/relic/css/bootstrap.min.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="View/relic/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="View/relic/css/magnific-popup.css">
-	<!-- Easy Responsive Tabs -->
-	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
-	<!-- Theme Style -->
-	<link rel="stylesheet" href="View/relic/css/style.css">
-
-    <script type="text/javascript" src="View/angular.min.js"></script>
-    <script type="text/javascript" src="Controller/gamesController.js"></script>
+  	<!-- Themify Icons -->
+  	<link rel="stylesheet" href="View/relic/css/themify-icons.css">
+  	<!-- FontAwesome Icons -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  	<!-- Bootstrap -->
+  	<link rel="stylesheet" href="View/relic/css/bootstrap.min.css">
+  	<!-- Owl Carousel -->
+  	<link rel="stylesheet" href="View/relic/css/owl.carousel.min.css">
+  	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
+  	<!-- Magnific Popup -->
+  	<link rel="stylesheet" href="View/relic/css/magnific-popup.css">
+  	<!-- Easy Responsive Tabs -->
+  	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
+  	<!-- Theme Style -->
+  	<link rel="stylesheet" href="View/relic/css/style.css">
     <title> Games </title>
   </head>
 
-  <body class="list-group" ng-controller="GamesController">
+  <body class="list-group">
 
     <?php include("nav.php"); ?>
 
     <div class="page-header">
-      <h1 class ="display-3 text-center">{{ "Video games proposed"}}</h1>
+      <h1 class ="display-3 text-center">Video games proposed</h1>
     </div>
+
 
     <div class="row">
       <div class="col-md-12">
