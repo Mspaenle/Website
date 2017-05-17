@@ -22,7 +22,7 @@
 
                 function addKid(j)
                 {
-                    if (i < j)
+                    if (i < j-1)
                     {
                         var newRow = document.createElement('tr');
 
