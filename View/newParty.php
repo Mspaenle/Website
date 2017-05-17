@@ -63,11 +63,11 @@
           <label class="col-sm-2 col-form-label">Type of party</label>
           <div class ="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="typePartySolo" id="solo" value="solo">
+              <input class="form-check-input" type="radio" name="typeParty" id="solo" value="0" class="group-required">
               Individual
             </label>
             <label class="form-check-label ">
-              <input class="form-check-input" type="radio" name="typePartyTeam" id="team" value="team">
+              <input class="form-check-input" type="radio" name="typeParty" id="team" value="1">
               By Team
             </label>
           </div>

@@ -61,7 +61,7 @@
     </div>
 
 <div class="container">
-<form action="ResultForm.php">
+<form action="ResultForm.php" method="post">
 
   <table border="1" id="players" classe="tablePlayer col-ls-6 col-md-8 col-sm-12">
               <tr>
