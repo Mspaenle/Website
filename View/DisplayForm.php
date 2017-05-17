@@ -12,37 +12,9 @@
   	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
   	<!-- Easy Responsive Tabs -->
   	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
-    <script type="text/javascript" src="View/angular.min.js"></script>
-    <script type="text/javascript" src="Controller/gamesController.js"></script>
+  	<link rel="stylesheet" href="View/style.css">
+    <script type="text/javascript" src="View/js/playeTable.js"></script>
     <title> Players </title>
-
-    <script type="text/javascript">
-
-                var i = 0;
-
-                function addKid(j)
-                {
-                    if (i < j-1)
-                    {
-                        var newRow = document.createElement('tr');
-
-                        newRow.innerHTML = '<td> <input type="text" name="PlayerName_'+i+'" ><td> <input type="text" name="PlayerNumber_'+i+'" ></td>';
-
-                        document.getElementById('players').appendChild(newRow);
-                        i++;
-                    }
-                }
-
-                function removeKid(element)
-                {
-                    document.getElementById('players').removeChild(element.parentNode);
-                    i--;
-                }
-
-      </script>
-
-
-
 
   </head>
 
@@ -56,7 +28,7 @@
 
 <form action="ResultForm.php">
 
-  <table border="1" id="players">
+  <table border="1" id="players" classe="table-hover">
               <tr>
                   <th>Nom Joueur</th>
                   <th>Numéro Joueur</th>

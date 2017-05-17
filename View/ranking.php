@@ -12,8 +12,7 @@
   	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
   	<!-- Easy Responsive Tabs -->
   	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
-    <script type="text/javascript" src="View/angular.min.js"></script>
-    <script type="text/javascript" src="Controller/gamesController.js"></script>
+  	<link rel="stylesheet" href="View/style.css">
     <title> Ranking </title>
   </head>
 

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html >
+<html>
+
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="View/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/relic/css/heroic-features.css" />
   	<!-- Themify Icons -->
   	<link rel="stylesheet" href="View/relic/css/themify-icons.css">
-  	<!-- FontAwesome Icons -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   	<!-- Bootstrap -->
   	<link rel="stylesheet" href="View/relic/css/bootstrap.min.css">
   	<!-- Owl Carousel -->
@@ -48,9 +48,9 @@
       					</div>
 
       					<div class="row">
-      						<div class="col-md-12">
+      						<div class="col-md-12 col-sm-12 col-lg-12">
       							<div class="owl-carousel owl-carousel-fullwidth" ng-repeat="game in Games.gamesProposed">
-                      <div class=" hero-feature"> <!--col-md-3 col-sm-6 -->
+                      <div class=" hero-feature col-md-3 col-sm-6 ">
                           <div class="thumbnail item">
                               <img src="{{game.image}}" alt="">
                               <div class="caption">
