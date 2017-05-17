@@ -80,7 +80,7 @@
               <tr>
                   <th>Name</th>
                   <th>Number</th>
-                  <?php if($Team){?><th>Team Number</th><?}>
+                  <?php if($Team){?><th>Team Number</th><?php }?>
               </tr>
               <tbody  >
                   <tr >
