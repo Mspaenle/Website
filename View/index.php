@@ -3,21 +3,21 @@
 
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="View/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="View/relic/css/heroic-features.css" />
+    <link rel="stylesheet" type="text/css" href="View/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="View/css/heroic-features.css" />
   	<!-- Themify Icons -->
-  	<link rel="stylesheet" href="View/relic/css/themify-icons.css">
+  	<link rel="stylesheet" href="View/css/themify-icons.css">
   	<!-- Bootstrap -->
-  	<link rel="stylesheet" href="View/relic/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="View/css/bootstrap.min.css">
   	<!-- Owl Carousel -->
-  	<link rel="stylesheet" href="View/relic/css/owl.carousel.min.css">
-  	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
+  	<link rel="stylesheet" href="View/css/owl.carousel.min.css">
+  	<link rel="stylesheet" href="View/css/owl.theme.default.min.css">
   	<!-- Magnific Popup -->
-  	<link rel="stylesheet" href="View/relic/css/magnific-popup.css">
+  	<link rel="stylesheet" href="View/css/magnific-popup.css">
   	<!-- Easy Responsive Tabs -->
-  	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
+  	<link rel="stylesheet" href="View/css/easy-responsive-tabs.css">
   	<!-- Theme Style -->
-  	<link rel="stylesheet" href="View/relic/css/style.css">
+  	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
     <title> Moys Games </title>
   </head>

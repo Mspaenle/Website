@@ -1,20 +1,54 @@
 <!DOCTYPE html>
-
 <html>
 
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="View/relic/css/heroic-features.css" />
+    <link rel="stylesheet" type="text/css" href="View/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="View/css/heroic-features.css" />
+  	<!-- Themify Icons -->
+  	<link rel="stylesheet" href="View/css/themify-icons.css">
   	<!-- Bootstrap -->
-  	<link rel="stylesheet" href="View/relic/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="View/css/bootstrap.min.css">
   	<!-- Owl Carousel -->
-  	<link rel="stylesheet" href="View/relic/css/owl.carousel.min.css">
-  	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
+  	<link rel="stylesheet" href="View/css/owl.carousel.min.css">
+  	<link rel="stylesheet" href="View/css/owl.theme.default.min.css">
+  	<!-- Magnific Popup -->
+  	<link rel="stylesheet" href="View/css/magnific-popup.css">
   	<!-- Easy Responsive Tabs -->
-  	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
+  	<link rel="stylesheet" href="View/css/easy-responsive-tabs.css">
+  	<!-- Theme Style -->
+  	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
-    <script type="text/javascript" src="View/js/playerTable.js"></script>
+
     <title> Players </title>
+
+    <script type="text/javascript">
+
+                var i = 0;
+
+                function addKid(j)
+                {
+                    if (i < j-1)
+                    {
+                        var newRow = document.createElement('tr');
+
+                        newRow.innerHTML = '<td> <input type="text" name="PlayerName_'+i+'" ><td> <input type="text" name="PlayerNumber_'+i+'" ></td>';
+
+                        document.getElementById('players').appendChild(newRow);
+                        i++;
+                    }
+                }
+
+                function removeKid(element)
+                {
+                    document.getElementById('players').removeChild(element.parentNode);
+                    i--;
+                }
+
+      </script>
+
+
+
 
   </head>
 
@@ -27,8 +61,8 @@
     </div>
 
 <form action="ResultForm.php">
-<div class="container">
-  <table border="1" id="players" classe="table table-hover">
+
+  <table border="1" id="players" classe="table-hover">
               <tr>
                   <th>Nom Joueur</th>
                   <th>Numéro Joueur</th>
@@ -43,15 +77,13 @@
                       </td>
                       <td>
                         <?php $i = $nbPlayers; ?>
-                        <?php while($i>0){?>
-                          <input type="button" id="add_players()" onClick="addKid()" value="+" />
-                          <?php $i--;?>
+                          <input type="button" id="add_players()" onClick="addKid(<?php echo $i;?>)" value="+" />
+
                       </td>
                   </tr>
               </tbody>
           </table>
           <input type="submit" value="Submit" class="btn btn-default">
-        </div>
  </form>
 
     <div class="container">
