@@ -70,8 +70,9 @@
                           <input type="text" name="Serie">
                       </td>
                       <td>
-                        <?php $i = $nbPlayers; ?>
-                          <input type="button" id="add_players()" onClick="addKid(4)" value="+" />
+                        <?php $i = $nbPlayers;
+                          echo <input type="button" id="add_players()" onClick="addKid(.$i.)" value="+" />;
+                        ?>
                       </td>
                   </tr>
               </tbody>
