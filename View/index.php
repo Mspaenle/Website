@@ -44,7 +44,7 @@
             <div id="js-fh5co-slider">
       				<div class="container">
       					<div class="fh5co-section-heading">
-      						<h2 class="text-muted">Game Proposed</h2>
+      						<h2 class="text-muted">Games proposed</h2>
       					</div>
 
       					<div class="row">
