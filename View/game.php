@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="owl-carousel owl-carousel-fullwidth">
-              <div class="item"><img src="images/Fifa17.jpg" alt="image"></div>
+              <div class="item col-sm-8 col-md-8 col-lg-8"><img src="images/Fifa17.jpg" alt="image"></div>
               <div class="item"><img src="images/MarioKart.jpg" alt="image"></div>
               <div class="item"><img src="images/MarioParty.jpg" alt="image"></div>
           </div>
