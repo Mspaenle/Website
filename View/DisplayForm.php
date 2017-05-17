@@ -12,7 +12,6 @@
   	<link rel="stylesheet" href="View/relic/css/owl.theme.default.min.css">
   	<!-- Easy Responsive Tabs -->
   	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
-    <script type="text/javascript" src="View/angular.min.js"></script>
     <title> Players </title>
 
     <script type="text/javascript">
