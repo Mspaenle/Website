@@ -65,7 +65,7 @@
               <input class="form-check-input" type="radio" name="typeParty" id="solo" value="solo">
               Individual
             </label>
-            <label class="form-check-label">
+            <label class="form-check-label row">
               <input class="form-check-input" type="radio" name="typeParty" id="team" value="team">
               By Team
             </label>
