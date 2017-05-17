@@ -82,15 +82,15 @@
                   <th>Number</th>
                   <?php if($Team){?><th>Team Number</th><?php }?>
               </tr>
-              <tbody  >
-                  <tr >
-                      <td  >
+              <tbody>
+                  <tr>
+                      <td>
                           <input type="text" name="Designation">
                       </td>
                       <td>
                           <input type="text" name="Serie">
                       </td>
-                      <?php if($Team){?><td>Team Number</td><?php }?>
+                      <?php if($Team){?><td><input type="text" name="TeamNumber"></td><?php }?>
                       <td>
                         <?php $i = $nbPlayers; ?>
                           <input type="button" id="add_players()" onClick="addPlayer(<?php echo $i;?>,<?php echo $Team;?>)" value="+" />

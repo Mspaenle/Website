@@ -36,14 +36,14 @@
         <div class ="form-group row">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="pName" placeholder="Amy's Bday" required>
+            <input type="text" class="form-control" name="pName" placeholder="Amy's Bday" required>
           </div>
         </div>
 
         <div class ="form-group row">
           <label for="game"  class="col-sm-2 col-form-label">Which game do you want to play ?</label>
           <div class="col-sm-10">
-            <select id="game" class="form-control">
+            <select name="game" class="form-control">
               <option value="fifa17">Fifa 17</option>
               <option value="marioParty">Mario Party</option>
               <option value="marioKart">Mario Kart</option>
