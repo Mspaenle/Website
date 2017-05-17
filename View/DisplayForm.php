@@ -70,7 +70,7 @@
                           <input type="text" name="Serie">
                       </td>
                       <td>
-                          <input type="button" id="add_players(4)" onClick="addKid()" value="+" />
+                          <input type="button" id="add_players()" onClick="addKid(4)" value="+" />
                       </td>
                   </tr>
               </tbody>
