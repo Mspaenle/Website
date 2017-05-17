@@ -52,7 +52,7 @@
           </div>
 
           <div class="row text-center" ng-repeat="game in Games.gamesProposed">
-              <div class="col-md-3 col-sm-6 hero-feature">
+              <div class=" hero-feature"><!-- col-md-3 col-sm-6 -->
                   <div class="thumbnail">
                       <img src="{{game.image}}" alt="">
                       <div class="caption">
