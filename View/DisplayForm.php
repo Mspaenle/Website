@@ -90,6 +90,7 @@
                       <td>
                           <input type="text" name="Serie">
                       </td>
+                      <?php if($Team){?><td>Team Number</td><?php }?>
                       <td>
                         <?php $i = $nbPlayers; ?>
                           <input type="button" id="add_players()" onClick="addPlayer(<?php echo $i;?>,<?php echo $Team;?>)" value="+" />
