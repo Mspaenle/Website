@@ -13,7 +13,6 @@
   	<!-- Easy Responsive Tabs -->
   	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
     <script type="text/javascript" src="View/angular.min.js"></script>
-    <script type="text/javascript" src="Controller/gamesController.js"></script>
     <title> Players </title>
 
     <script type="text/javascript">
@@ -70,7 +69,7 @@
                           <input type="text" name="Serie">
                       </td>
                       <td>
-                          <input type="button" id="add_players()" onClick="addKid(4)" value="+" />
+                          <?php echo "<input type="button" id="add_players()" onClick="addKid($_POST('nbPlayers'))" value="+" />" ?>
                       </td>
                   </tr>
               </tbody>
