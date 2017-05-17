@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='Games'>
+<html ng-app='GamesPlayers'>
 
   <head>
     <meta charset="utf-8" />
@@ -23,12 +23,14 @@
 	<link rel="stylesheet" href="View/relic/css/style.css">
 
     <script type="text/javascript" src="View/angular.min.js"></script>
-    <script type="text/javascript" src="Controller/gamesController.js"></script>
+    <script type="text/javascript" src="Controller/partyPlayerController.js"></script>
     <title> Start a new tournament </title>
   </head>
 
-  <body>
+  <body  ng-controller="PlayersController as PGames">
+
     <?php include("nav.php"); ?>
+
     <div class="page-header">
       <h1 class ="display-3 text-center">{{ "Start a new party"}}</h1>
     </div>
@@ -38,7 +40,7 @@
         <div class ="form-group row">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="pName" placeholder="Amy's Bday">
+            <input type="text" class="form-control" id="pName" placeholder="Amy's Bday" required ng-minlength="2" ng-maxlength="20">
           </div>
         </div>
 
@@ -55,7 +57,7 @@
 
 
           <div class ="form-group row">
-            <label for="numberPlayers" class="col-sm-2 col-form-label">Number of players :</label>
+            <label for="numberPlayers" class="col-sm-2 col-form-label" ng-model="number">Number of players :</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nbPlayers" placeholder="From 2 to 16">
             </div>
