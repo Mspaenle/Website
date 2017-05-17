@@ -56,11 +56,11 @@
 
     <?php include("nav.php"); ?>
 
-    <div class="page-header">
+    <div class="page-header center-w">
       <h1 class ="display-3 text-center">Players <?php echo $_POST['nbPlayers']; ?></h1>
     </div>
 
-<div class="container">
+<div class="container center-w">
 <form action="ResultForm.php">
 
   <table border="1" id="players" classe="table-hover">

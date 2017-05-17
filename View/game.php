@@ -26,17 +26,18 @@
 
     <?php include("nav.php"); ?>
 
-    <div class="page-header">
+    <div class="page-header center-w">
       <h1 class ="display-3 text-center">Video games proposed</h1>
     </div>
 
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="owl-carousel owl-carousel-fullwidth">
-            <div class="item"><img src="{{Games.images[0]}}" alt="image"></div>
-            <div class="item"><img src="{{Games.images[1]}}" alt="image"></div>
-            <div class="item"><img src="{{Games.images[2]}}" alt="image"></div>
+    <div class="container center-w">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel owl-carousel-fullwidth">
+              <div class="item"><img src="{{Games.images[0]}}" alt="image"></div>
+              <div class="item"><img src="{{Games.images[1]}}" alt="image"></div>
+              <div class="item"><img src="{{Games.images[2]}}" alt="image"></div>
+          </div>
         </div>
       </div>
     </div>

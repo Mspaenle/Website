@@ -26,11 +26,11 @@
 
     <?php include("nav.php"); ?>
 
-    <div class="page-header">
+    <div class="page-header center-w">
       <h1 class ="display-3 text-center">Start a new party</h1>
     </div>
 
-    <div class ="container">
+    <div class ="container center-w">
       <form action="DisplayForm.php" method="post">
         <div class ="form-group row">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>

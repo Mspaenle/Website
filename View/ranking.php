@@ -26,7 +26,7 @@
 
     <?php include("nav.php"); ?>
 
-    <div class="page-header">
+    <div class="page-header center-w">
       <h1 class ="display-3 text-center">Ranking</h1>
     </div>
 
