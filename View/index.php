@@ -76,7 +76,7 @@
       						<div class="col-md-12">
       							<div class="owl-carousel owl-carousel-fullwidth" ng-repeat="game in Games.gamesProposed">
                       <div class=" hero-feature"> <!--col-md-3 col-sm-6 -->
-                          <div class="thumbnail">
+                          <div class="thumbnail item">
                               <img src="{{game.image}}" alt="">
                               <div class="caption">
                                   <h3>{{game.name}}</h3>
