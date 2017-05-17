@@ -60,6 +60,7 @@
       <h1 class ="display-3 text-center">Players <?php echo $_POST['nbPlayers']; ?></h1>
     </div>
 
+<div class="container">
 <form action="ResultForm.php">
 
   <table border="1" id="players" classe="table-hover">
@@ -85,6 +86,7 @@
           </table>
           <input type="submit" value="Submit" class="btn btn-default">
  </form>
+ </div>
 
     <div class="container">
       <?php include("foot.php")?>
