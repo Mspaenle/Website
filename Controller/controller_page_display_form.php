@@ -4,4 +4,6 @@
 
 	$Team=$_POST['typeParty'];
 
+	require_once("View/DisplayForm.php");
+
 ?>
