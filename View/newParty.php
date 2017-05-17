@@ -31,7 +31,7 @@
     </div>
 
     <div class ="container">
-      <form action="View/DisplayForm.php"  method="post">
+      <form action="DisplayForm.php">
         <div class ="form-group row">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
           <div class="col-sm-10">
