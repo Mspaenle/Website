@@ -7,8 +7,6 @@
     <link rel="stylesheet" type="text/css" href="View/relic/css/heroic-features.css" />
   	<!-- Themify Icons -->
   	<link rel="stylesheet" href="View/relic/css/themify-icons.css">
-  	<!-- FontAwesome Icons -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   	<!-- Bootstrap -->
   	<link rel="stylesheet" href="View/relic/css/bootstrap.min.css">
   	<!-- Owl Carousel -->
@@ -20,6 +18,7 @@
   	<link rel="stylesheet" href="View/relic/css/easy-responsive-tabs.css">
   	<!-- Theme Style -->
   	<link rel="stylesheet" href="View/relic/css/style.css">
+
     <title> Start a new tournament </title>
   </head>
 
@@ -32,15 +31,15 @@
     </div>
 
     <div class ="container">
-      <form action="DisplayForm.php">
-        <div class ="form-group row">
+      <form action="Controller/controller-form.php">
+        <div class ="form-group">
           <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="pName" placeholder="Amy's Bday" required ng-minlength="2" ng-maxlength="20">
+            <input type="text" <!--class="form-control"--> id="pName" placeholder="Amy's Bday" required>
           </div>
         </div>
 
-        <div class ="form-group row">
+        <div class ="form-group">
           <label for="game"  class="col-sm-2 col-form-label">Which game do you want to play ?</label>
           <div class="col-sm-10">
             <select id="game" class="form-control">
@@ -52,8 +51,8 @@
         </div>
 
 
-          <div class ="form-group row">
-            <label for="numberPlayers" class="col-sm-2 col-form-label" ng-model="number">Number of players :</label>
+          <div class ="form-group">
+            <label for="numberPlayers" class="col-sm-2 col-form-label">Number of players :</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" id="nbPlayers" placeholder="From 2 to 16">
             </div>
