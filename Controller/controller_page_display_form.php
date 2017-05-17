@@ -3,7 +3,7 @@
 	$nbPlayers=$_POST['nbPlayers'];
 
 	if(empty($_POST["typePartySolo"])&&empty($_POST["typePartyTeam"])){
-		header("Location: ../error.php?message=no_mode-selected");
+		header("Location: ../error.php?message=no_mode_selected");
 	}
 	else{
 		if(empty($_POST["typePartySolo"])&&!empty($_POST["typePartyTeam"])){
