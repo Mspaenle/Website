@@ -1,6 +1,19 @@
 <?php
 
 	$nbPlayers=$_POST['nbPlayers'];
-	require_once("View/DisplayForm.php");
+
+	if(empty($_POST["typePartySolo"])&&empty($_POST["typePartyTeam"])){
+		header("Location: ../error.php?message=no_mode-selected");
+	}
+	else{
+		if(empty($_POST["typePartySolo"])&&!empty($_POST["typePartyTeam"])){
+			$Team=1;
+			require_once("View/DisplayForm.php");
+		}
+		else{
+			$Team=2;
+			require_once("View/DisplayForm.php");
+		}
+	}
 
 ?>

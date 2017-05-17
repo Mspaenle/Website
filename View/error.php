@@ -19,37 +19,7 @@
   	<!-- Theme Style -->
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
-
-    <title> Players </title>
-
-    <script type="text/javascript">
-
-                var i = 0;
-
-                function addPlayer(j)
-                {
-                    if (i < j-1)
-                    {
-                        var newRow = document.createElement('tr');
-
-                        newRow.innerHTML = '<td> <input type="text" name="PlayerName_'+i+'" ><td> <input type="text" name="PlayerNumber_'+i+'" ></td>';
-
-                        document.getElementById('players').appendChild(newRow);
-                        i++;
-                    }
-                }
-
-                function removePlayer(element)
-                {
-                    document.getElementById('players').removeChild(element.parentNode);
-                    i--;
-                }
-
-      </script>
-
-
-
-
+    <title> Error </title>
   </head>
 
   <body>
@@ -57,41 +27,16 @@
     <?php include("nav.php"); ?>
 <div class="center-w">
     <div class="page-header">
-      <h1 class ="display-3 text-center">Players <?php echo $_POST['nbPlayers']; ?></h1>
+      <h1 class ="display-3 text-center">Error</h1>
+      <h2 class ="display-4 text-center"><?php echo $message;?></h2>
+      <a class="btn btn-primary btn-large" href="newParty.php">Get back to the formular</a>
     </div>
 
-<div class="container">
-<form action="ResultForm.php">
 
-  <table border="1" id="players" classe="tablePlayer col-ls-6 col-md-8 col-sm-12">
-              <tr>
-                  <th>Nom Joueur</th>
-                  <th>Numéro Joueur</th>
-              </tr>
-              <tbody  >
-                  <tr >
-                      <td  >
-                          <input type="text" name="Designation">
-                      </td>
-                      <td>
-                          <input type="text" name="Serie">
-                      </td>
-                      <td>
-                        <?php $i = $nbPlayers; ?>
-                          <input type="button" id="add_players()" onClick="addPlayer(<?php echo $i;?>)" value="+" />
-
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-          <input type="submit" value="Submit" class="btn btn-default">
- </form>
- </div>
-</div>
     <div class="container">
       <?php include("foot.php")?>
     </div>
-
+</div>
 
     		<!-- jQuery -->
     		<script src="View/relic/js/jquery-1.10.2.min.js"></script>
