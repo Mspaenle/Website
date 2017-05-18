@@ -30,6 +30,34 @@
       <h1 class ="display-3 text-center">Ranking</h1>
     </div>
 
+    <table class="table table-hover rankTab">
+      <thead>
+        <tr>
+          <th> </th>
+          <th> Name </th>
+          <th> Score </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <?php
+
+        $i=1;
+        while($donnees = $answer->fetch())
+        {
+        ?>
+        <tr>
+          <td> <?php echo $i; $i++; ?>
+          <td> <?php echo $donnees['name']; ?></td>
+          <td> <?php echo $donnees['score']; ?></td>
+        </tr>
+        <?php
+        }
+        $answer->closeCursor();
+        ?>
+
+    </table>
+
 
     <div class="container">
       <?php include("foot.php")?>

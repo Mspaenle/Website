@@ -7,7 +7,7 @@
 
 CREATE TABLE game
 (
-    idgame numeric(6) NOT NULL,
+    idgame SERIAL NOT NULL,
     namegame character varying(20) ,
     description character varying(250) ,
     image character varying(250) ,
@@ -16,9 +16,9 @@ CREATE TABLE game
 
 CREATE TABLE party
 (
-    idparty numeric(6) NOT NULL,
+    idparty SERIAL NOT NULL,
     nameparty character varying(20),
-    idgame numeric(6),
+    idgame integer,
     CONSTRAINT pk_party PRIMARY KEY (idparty),
     CONSTRAINT fk_party FOREIGN KEY (idgame)
         REFERENCES game(idgame)
@@ -26,7 +26,7 @@ CREATE TABLE party
 
 CREATE TABLE player
 (
-    idplayer numeric(6) NOT NULL,
+    idplayer SERIAL NOT NULL,
     name character varying(20),
     score numeric(6),
     CONSTRAINT pk_player PRIMARY KEY (idplayer)
@@ -34,7 +34,7 @@ CREATE TABLE player
 
 CREATE TABLE team
 (
-    idteam numeric(6) NOT NULL,
+    idteam SERIAL NOT NULL,
     teamname character varying(20) NOT NULL,
     CONSTRAINT pk_team PRIMARY KEY (idteam),
     CONSTRAINT team_teamname_key UNIQUE (teamname)
@@ -43,8 +43,8 @@ CREATE TABLE team
 
 CREATE TABLE participate
 (
-    idplayer numeric(6) NOT NULL,
-    idparty numeric(6) NOT NULL,
+    idplayer integer NOT NULL,
+    idparty integer NOT NULL,
     scoreparty numeric(6),
     CONSTRAINT pk_participate PRIMARY KEY (idplayer, idparty),
     CONSTRAINT fk_participate1 FOREIGN KEY (idplayer)
@@ -55,9 +55,9 @@ CREATE TABLE participate
 
 CREATE TABLE participateteam
 (
-    idplayer numeric(6) NOT NULL,
-    idparty numeric(6) NOT NULL,
-    idteam numeric(6),
+    idplayer integer NOT NULL,
+    idparty integer NOT NULL,
+    idteam integer,
     scoreparty numeric(6),
     CONSTRAINT pk_participateteam PRIMARY KEY (idplayer, idparty),
     CONSTRAINT fk_participateteam1 FOREIGN KEY (idplayer)
