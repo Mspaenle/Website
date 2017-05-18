@@ -69,7 +69,7 @@
     </div>
 
     <?php include("foot.php"); ?>
-    <script src="View/jsjquery.min.js"></script>
-    <script src="View/jsowlcarousel/owl.carousel.min.js"></script>
+    <script src="View/js/jquery.min.js"></script>
+    <script src="View/js/owlcarousel/owl.carousel.min.js"></script>
   </body>
 </html>
