@@ -34,6 +34,7 @@
 
           <tbody>
             <?php
+            $i=1;
             while($donnees = $answer->fetch())
             {
             ?>

@@ -1,15 +1,15 @@
 <?php
 
+	require_once("Model/party");
+
 	$Party = $_POST['pName'];
-	setcookie("party", $Party, time()+(3600*24),"/");
-
 	$Game = $_POST['game'];
-
 	$nbPlayers=$_POST['nbPlayers'];
-
 	$Team=$_POST['typeParty'];
+	addParty($Party,$Game,$Team,$nbPlayers);
 
-	//Model : AddParty
+	$idParty=getParty($Party);
+	setcookie("type", $Team, time()+(3600*24),"/");
 
 	require_once("View/DisplayForm.php");
 

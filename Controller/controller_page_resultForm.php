@@ -1,12 +1,23 @@
 <?php
+
+	require_once("Model/player.php");
+	require_once("Model/party.php");
+	require_once("Model/participate.php");
+	require_once("Model/participateteam.php");
+
 	$Party = $_COOKIE['party'];
+	$Team = teamParty($Party);
 
-	$Game = $_POST['game'];
 
-	$nbPlayers=$_POST['nbPlayers'];
 
-	$Team=$_POST['typeParty'];
-	//require des models pour remplir les tables addPlayers
+	if($Team){
+		//Game participants in teams
+
+	}
+	else{
+		//Game participants in solo
+
+	}
 	require("View/ResultForm.php");
 
 ?>
