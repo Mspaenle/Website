@@ -12,7 +12,7 @@
 	    $add->execute();
 	}
 
-  function getparty($name)
+  function getParty($name)
   #Parameter : $name the name of the party
   #Result : return the idparty of the party with the name in parameter, if not exist return null
   {
