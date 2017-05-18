@@ -13,10 +13,10 @@
 
   function rankingPlayer(){
     require_once("pdo.php");
-       	$bd = connexion();
+       	$bd = connection();
         $result = $bd->query("SELECT * FROM player ORDER BY score");
 
-        return $result; 
+        return $result;
 
   }
 
