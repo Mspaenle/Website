@@ -47,26 +47,27 @@
       						<h2 class="text-muted">Games proposed</h2>
       					</div>
 
-      					<div class="row">
-      						<div class="col-md-12 col-sm-12 col-lg-12">
-      							<div class="owl-carousel owl-carousel-fullwidth" ng-repeat="game in Games.gamesProposed">
-                      <div class=" hero-feature col-md-3 col-sm-6 ">
-                          <div class="thumbnail item">
-                              <img src="{{game.image}}" alt="">
-                              <div class="caption">
-                                  <h3>{{game.name}}</h3>
-                                  <img  src="{{game.image}}">
-                                  <p>{{game.description}}</p>
-                                  <p>
-                                      <a href="games.php" class="btn btn-primary">More info</a> <a href="#" class="btn btn-default">More Info</a>
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="owl-carousel owl-carousel-fullwidth">
+                        <?php
 
-      							</div>
-      						</div>
-      					</div>
+                        $i=1;
+                        while($donnees = $answer->fetch())
+                        {
+                        ?>
+                          <div class="item col-sm-8 col-md-12 col-lg-12"><img src="<?php echo $donnees['image']; ?>" alt="image"></div>
+                        <?php
+                        }
+                        $answer->closeCursor();
+                        ?>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
       				</div>
       			</div>
           <hr>

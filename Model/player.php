@@ -1,23 +1,49 @@
 <?php
 
 	function addPlayer($name)
+  #Parameter : $name of the new player
+  #Result : (void) create a new player with the name in parameter
 	{
 	    require_once("pdo.php");
       $bd = connection();
 
+	    $add = $bd->prepare( "INSERT INTO player (name) VALUES ('".$name."')");
 
-	    $ajout = $bd->prepare( "INSERT INTO player (idplayer,name,score) VALUES ('".$email."','".$name."','".$score."')");
-
-	    $ajout->execute();
+	    $add->execute();
 	}
 
-  function rankingPlayer(){
+  function getPlayer($name)
+  #Parameter : $name the name of the player
+  #Result : return the idPlayer of the player with the name in parameter, if not exist return null
+  {
     require_once("pdo.php");
-       	$bd = connection();
-        $result = $bd->query("SELECT * FROM player ORDER BY -score");
+    $bd = connection();
 
-        return $result;
+    $result = $bd->query("SELECT idPlayer FROM player WHERE name='".$name."'");
+    $player=$result->fetch();
+    $result->closeCursor();
+    return $player;
 
+  }
+
+  function rankingPlayer()
+  #Result : the list of players ordered by score
+  {
+    require_once("pdo.php");
+    $bd = connection();
+
+    $result = $bd->query("SELECT * FROM player ORDER BY -score");
+    return $result;
+  }
+
+  function updateScore($idPlayer,$scoreToAdd)
+  #Parameter : id of the player
+  #Result : (void) add $scoreToAdd to the current score of the player
+  {
+    require_once("pdo.php");
+    $bd = connection();
+
+    $bd->exec("UPDATE player SET score = score + ". $scoreToAdd ." WHERE email ='". $iD ."' ");
   }
 
 ?>
