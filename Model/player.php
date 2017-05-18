@@ -14,7 +14,7 @@
   function rankingPlayer(){
     require_once("pdo.php");
        	$bd = connection();
-        $result = $bd->query("SELECT * FROM player ORDER BY score");
+        $result = $bd->query("SELECT * FROM player ORDER BY -score");
 
         return $result;
 
