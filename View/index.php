@@ -39,37 +39,67 @@
 
           <hr>
 
+          <div class="container row">
 
-<!-- Afficher les images des jeux -->
-            <div id="js-fh5co-slider">
-      				<div class="container">
-      					<div class="fh5co-section-heading">
-      						<h2 class="text-muted">Games proposed</h2>
-      					</div>
+            <div class="col-lg-6">
+        				<div class="container">
+        					<div class="display-3">
+        						<h2 class="text-muted">Games proposed</h2>
+        					</div>
 
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="owl-carousel owl-carousel-fullwidth">
-                        <?php
-
-                        $i=1;
-                        while($donnees = $answer->fetch())
-                        {
-                        ?>
-                          <div class="item col-sm-8 col-md-6 col-lg-6"><img src="<?php echo $donnees['image']; ?>" alt="image"></div>
-                        <?php
-                        }
-                        $answer->closeCursor();
-                        ?>
-                      </div>
-                    </div>
+                  <?php
+                  while($donnees = $answer->fetch())
+                  {
+                  ?>
+                  <div class="container">
+                            <div class="item"><a href="games.php"><img src="<?php echo $donnees['image']; ?>" alt="image" class="col-lg-4" width=30%></a></div>
                   </div>
-                </div>
+                  <?php
+                  }
+                  $answer->closeCursor();
+                  ?>
+        				</div>
+             </div>
+
+             <div class="col-lg-6">
+               <div class="display-3">
+                 <h2 class="text-muted">Top 3</h2>
+               </div>
+
+               <table class="table table-hover rankTab">
+                 <thead>
+                   <tr>
+                     <th> Name </th>
+                     <th> Score </th>
+                   </tr>
+                 </thead>
+
+                 <tbody>
+                   <?php
+
+                   $j=1;
+                   while($j<4)
+                   {
+                     $donnees2 = $players->fetch();
+                     $j=$j+1;
+                   ?>
+                   <tr>
+                     <td><?php echo $donnees2['name']; ?></td>
+                     <td><?php echo $donnees2['score']; ?></td>
+                   </tr>
+                   <?php
+                   }
+                   $players->closeCursor();
+                   ?>
+                 </tbody>
+               </table>
+             </div>
 
 
-      				</div>
-      			</div>
+
+
+          </div>
+
           <hr>
 
         </div>
