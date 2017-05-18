@@ -5,19 +5,18 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="View/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/css/heroic-features.css" />
-  	<!-- Theme Style -->
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
     <title> Moys Games </title>
   </head>
 
-      <body class="list-group go-to-top">
+  <body class="list-group go-to-top">
 
-      <?php include("nav.php"); ?>
-<div class="center-w">
+    <?php include("nav.php"); ?>
+
+    <div class="center-w">
+
       <div class="container">
-
-
 
           <header class="jumbotron hero-spacer">
               <h1>Welcome</h1>
@@ -65,7 +64,6 @@
 
                  <tbody>
                    <?php
-
                    $j=1;
                    while($j<4)
                    {
@@ -84,19 +82,15 @@
                </table>
              </div>
 
-
-
-
           </div>
 
           <hr>
 
         </div>
 
-          <?php include("foot.php"); ?>
+        <?php include("foot.php"); ?>
 
       </div>
 
   </body>
-
-  </html>
+</html>
