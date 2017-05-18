@@ -1,8 +1,8 @@
 <?php
 
-  function addTeam($name,$descr,$image)
-  #Parameter : $name of the new team, $descr, $image (url)
-  #Result : (void) create a new team with the name in parameter
+  function addGame($name,$descr,$image)
+  #Parameter : $name of the new game, $descr, $image (url)
+  #Result : (void) create a new game with the name in parameter
   {
       require_once("pdo.php");
       $bd = connection();
@@ -19,6 +19,16 @@
     $bd = connection();
 
     $result = $bd->query("SELECT image FROM game ");
+    return $result;
+  }
+
+  function getGames()
+  #result: return the list of all the games
+  {
+    require_once("pdo.php");
+    $bd = connection();
+
+    $result = $bd->query("SELECT * FROM game ");
     return $result;
   }
 
