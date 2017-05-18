@@ -57,7 +57,7 @@
                         while($donnees = $answer->fetch())
                         {
                         ?>
-                          <div class="item col-sm-8 col-md-12 col-lg-12"><img src="<?php echo $donnees['image']; ?>" alt="image"></div>
+                          <div class="item col-sm-8 col-md-6 col-lg-6"><img src="<?php echo $donnees['image']; ?>" alt="image"></div>
                         <?php
                         }
                         $answer->closeCursor();
