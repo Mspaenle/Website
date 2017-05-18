@@ -23,7 +23,17 @@
     $player=$result->fetch();
     $result->closeCursor();
     return $player;
+  }
 
+  function getListPlayer($id)
+  #Parameter: list of id
+  #result: list of players
+  {
+    require_once("pdo.php");
+    $bd = connection();
+
+    $result = $bd->query("SELECT * FROM player WHERE idplayer in '.$id.'");
+    return $result;
   }
 
   function rankingPlayer()

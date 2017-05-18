@@ -7,17 +7,45 @@
 
 	$Party = $_COOKIE['party'];
 	$Team = teamParty($Party);
-
-
+	$nb = getNbPlayers($Party);
 
 	if($Team){
-		//Game participants in teams
-
+		$i=0;
+		while($i<$nb){
+			$name = $_POST['PlayerName_'.$i.];
+			$PT = $_POST['TeamNumber'];
+			$exist = getPlayer($name);
+			if($exist){
+				addParticipationTeam($exist,$Party,$PT);
+			}
+			else{
+				addPlayer($name);
+				$exist = getPlayer($name);
+				addParticipationTeam($exist,$Party,$PT);
+			}
+			$i++;
+		}
+		$ans=getPlayerTeam($Party);
 	}
 	else{
-		//Game participants in solo
-
+		$name = $_POST['PlayerName_'.$i.];
+		$exist = getPlayer($name);
+		while($i<$nb){
+			if($exist){
+				addParticipation($exist,$Party);
+			}
+			else{
+				addPlayer($name);
+				$exist = getPlayer($name);
+				addParticipation($exist,$Party);
+			}
+			$i++;
+		}
+		$ans=getPlayer($Party);
 	}
+
+	$answer=getListPlayer($ans);
+
 	require("View/ResultForm.php");
 
 ?>
