@@ -11,7 +11,7 @@
 	    $add->execute(array($name));
 	}
 
-  function getPlayer($name)
+  function getIdPlayer($name)
   #Parameter : $name the name of the player
   #Result : return the idPlayer of the player with the name in parameter, if not exist return null
   {

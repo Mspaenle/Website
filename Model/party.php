@@ -30,7 +30,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT team FROM party WHERE idparty=$idParty");
+    $result = $bd->query("SELECT team FROM party WHERE idparty='".$idParty."'");
     return $result['team'];
   }
 
@@ -41,8 +41,9 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT nbplayer FROM party WHERE idparty=$idParty");
-    return $result['nbplayer'];
+    $result = $bd->query("SELECT nbplayer FROM party WHERE idparty='".$idParty."'");
+		$ans=$result->fetch();
+    return $ans['nbplayer'];
   }
 
 ?>

@@ -1,18 +1,26 @@
 <?php
-
+	echo LA;
 	require_once("Model/player.php");
+	echo ICI;
 	require_once("Model/party.php");
+	echo ENCORE;
 	require_once("Model/participate.php");
+	echo VOILA;
 	require_once("Model/participateteam.php");
 
 	$Party = $_COOKIE['party'];
+	echo "party ";
+	echo $Party;
 	$Team = teamParty($Party);
+	echo "team ";
+
 	$nb = getNbPlayers($Party);
 
 	if($Team){
 		$i=0;
 		while($i<$nb){
-			$name = $_POST['PlayerName_'.$i.];
+			$a="PlayerName_".$i;
+			$name = $_POST[$a];
 			$PT = $_POST['TeamNumber'];
 			$exist = getPlayer($name);
 			if($exist){

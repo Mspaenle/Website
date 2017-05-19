@@ -11,7 +11,7 @@
 	    $add->execute(array($idPlayer,$idParty,$idTeam));
 	}
 
-  function getPlayerTeam($idParty)
+  function getPlayerParty($idParty)
   #Parameter : $idparty id of a party
   #Result : return the list of players participating to the party
   {
