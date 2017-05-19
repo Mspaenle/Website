@@ -7,8 +7,10 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT mdp FROM administrator WHERE idadmin='".$idAdmin."'");
-    return $result;
+    $result = $bd->query("SELECT mdp FROM administrator WHERE idadmin=$idAdmin");
+    $mdp=$result->fetch();
+    $result->closeCursor();
+    return $mdp['mdp'];
   }
 
  ?>

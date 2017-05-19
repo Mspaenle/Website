@@ -7,9 +7,9 @@
 	    require_once("pdo.php");
       $bd = connection();
 
-	    $add = $bd->prepare( "INSERT INTO team (name) VALUES ('".$name."')");
+	    $add = $bd->prepare( "INSERT INTO team (name) VALUES (?)");
 
-	    $add->execute();
+	    $add->execute(array($name));
 	}
 
   function getTeam($name)
@@ -19,7 +19,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT idteam FROM team WHERE name='".$name."'");
+    $result = $bd->query("SELECT idteam FROM team WHERE name=$name");
     $team=$result->fetch();
     $result->closeCursor();
     return $team;

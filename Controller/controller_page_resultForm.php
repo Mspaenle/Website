@@ -28,7 +28,7 @@
 		$ans=getPlayerTeam($Party);
 	}
 	else{
-		$name = $_POST['PlayerName_'.$i.];
+		$name = $_POST['PlayerName_'.$i];
 		$exist = getPlayer($name);
 		while($i<$nb){
 			if($exist){

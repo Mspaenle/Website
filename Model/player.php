@@ -7,9 +7,8 @@
 	    require_once("pdo.php");
       $bd = connection();
 
-	    $add = $bd->prepare( "INSERT INTO player (name) VALUES ('".$name."')");
-
-	    $add->execute();
+	    $add = $bd->prepare( "INSERT INTO player (name) VALUES (?)");
+	    $add->execute(array($name));
 	}
 
   function getPlayer($name)
@@ -19,10 +18,10 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT idPlayer FROM player WHERE name='".$name."'");
+    $result = $bd->query("SELECT idPlayer FROM player WHERE name=$name");
     $player=$result->fetch();
     $result->closeCursor();
-    return $player;
+    return $player['idPlayer'];
   }
 
   function getListPlayer($id)
@@ -32,7 +31,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT * FROM player WHERE idplayer in '.$id.'");
+    $result = $bd->query("SELECT * FROM player WHERE idplayer in $id");
     return $result;
   }
 
@@ -53,7 +52,8 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $bd->exec("UPDATE player SET score = score + ". $scoreToAdd ." WHERE email ='". $iD ."' ");
+		$bd->execute("UPDATE player SET score = score +$scoreToAdd WHERE email =$iD");
+    $update->execute();
   }
 
 ?>

@@ -32,9 +32,9 @@
             <label for="game"  class="col-sm-2 col-form-label">Which game do you want to play ?</label>
             <div class="col-sm-10">
               <select name="game" class="form-control" required>
-                <option value="fifa17">Fifa 17</option>
-                <option value="marioParty">Mario Party</option>
-                <option value="marioKart">Mario Kart</option>
+                <option value="Fifa 17">Fifa 17</option>
+                <option value="Mario Party">Mario Party</option>
+                <option value="Mario Kart">Mario Kart</option>
               </select>
             </div>
           </div>

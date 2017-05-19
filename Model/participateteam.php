@@ -7,9 +7,8 @@
 	    require_once("pdo.php");
       $bd = connection();
 
-	    $add = $bd->prepare( "INSERT INTO participateteam (idplayer,idparty,idteam) VALUES ('".$idplayer."','".$idParty."')");
-
-	    $add->execute();
+	    $add = $bd->prepare( "INSERT INTO participateteam (idplayer,idparty,idteam) VALUES (?,?,?)");
+	    $add->execute(array($idPlayer,$idParty,$idTeam));
 	}
 
   function getPlayerTeam($idParty)
@@ -19,7 +18,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT idplayer FROM participateteam WHERE idparty='".$idParty."'");
+    $result = $bd->query("SELECT idplayer FROM participateteam WHERE idparty=$idParty");
     return $result;
   }
 
@@ -30,7 +29,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT idplayer FROM participateteam WHERE idparty='".$idParty."' AND idteam='".$idTeam."'");
+    $result = $bd->query("SELECT idplayer FROM participateteam WHERE idparty=$idParty AND idteam=$idTeam");
     return $result;
   }
 

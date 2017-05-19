@@ -7,9 +7,8 @@
       require_once("pdo.php");
       $bd = connection();
 
-      $add = $bd->prepare( "INSERT INTO team (namegame,description,image) VALUES ('".$name."','".$descr."','".$image."')");
-
-      $add->execute();
+      $add = $bd->prepare( "INSERT INTO team (namegame,description,image) VALUES (?,?,?)");
+      $add->execute(array($name,$descr,$image));
   }
 
   function getImages()
@@ -18,8 +17,19 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT image FROM game ");
+    $result = $bd->query("SELECT image FROM game");
     return $result;
+  }
+
+  function getIdGame($name)
+  #Parameter : the name of a Game
+  {
+      require_once("pdo.php");
+      $bd = connection();
+
+      $result = $bd->query("SELECT idgame FROM game WHERE namegame='".$name."'");
+      $ans=$result->fetch();
+      return $ans['idgame'];
   }
 
   function getGames()
