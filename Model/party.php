@@ -6,8 +6,8 @@
 	{
 	    require_once("pdo.php");
       $bd = connection();
-
-	    $add = $bd->prepare( "INSERT INTO party VALUES ('".$id."''".$name."','".$idgame"','".$Team."','".$nb."')");
+			$add = bd->prepare("INSERT INTO party VALUES (5,'Louis',2,0,4)");
+	    //$add = $bd->prepare( "INSERT INTO party VALUES ('".$id."''".$name."','".$idgame"','".$Team."','".$nb."')");
 
 	    $add->execute();
 	}
