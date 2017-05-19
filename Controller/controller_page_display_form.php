@@ -6,7 +6,8 @@
 	$Game = $_POST['game'];
 	$nbPlayers=$_POST['nbPlayers'];
 	$Team=$_POST['typeParty'];
-	addParty($Party,$Game,$Team,$nbPlayers);
+	$id=4;
+	addParty($id,$Party,$Game,$Team,$nbPlayers);
 
 	$idParty=getParty($Party);
 	setcookie("type", $Team, time()+(3600*24),"/");

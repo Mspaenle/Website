@@ -1,13 +1,13 @@
 <?php
 
-	function addParty($name,$idgame,$Team,$nb)
+	function addParty($id,$name,$idgame,$Team,$nb)
   #Parameter : $name of the new party, idgame played during the party, $Team (bool 1:team 0:solo)
   #Result : (void) create a new party with the name in parameter
 	{
 	    require_once("pdo.php");
       $bd = connection();
 
-	    $add = $bd->prepare( "INSERT INTO party (nameparty,idgame,team,nb) VALUES ('".$name."','".$idgame"','".$Team."','".$nb."')");
+	    $add = $bd->prepare( "INSERT INTO party VALUES ('".$id."''".$name."','".$idgame"','".$Team."','".$nb."')");
 
 	    $add->execute();
 	}
@@ -48,7 +48,7 @@
     $result = $bd->query("SELECT nbPlayer FROM party WHERE idparty='".$idParty."'");
     $nb=$result->fetch();
     $result->closeCursor();
-    return $nb;    
+    return $nb;
   }
 
 ?>
