@@ -15,7 +15,7 @@
     <?php include("nav.php"); ?>
     <div class="center-w">
       <div class="page-header">
-        <h1 class ="display-3 text-center">Party <?php echo $Party;?></h1>
+        <h1 class ="display-3 text-center">Party <?php echo $nameParty;?></h1>
       </div>
 
       <form action = "current_party.php" method="post">
@@ -35,7 +35,7 @@
             <tr>
               <td> <?php echo $donnees['name']; ?></td>
               <td> <?php echo $donnees['scoreparty']; ?></td>
-              <td> <input type="text" name="<?php $donnees['idPlayer']; ?>"> </td>
+              <td> <input type="text" name="<?php echo $donnees['idplayer']; ?>"> </td>
             </tr>
             <?php
             }

@@ -33,4 +33,25 @@
     return $result;
   }
 
+	function getRankPlayerTeam($idParty,$idTeam)
+	#Parameter : $idparty id of a party, $idTeam
+	#Result : return the list of players participating to the party in the team in parameter
+	{
+		require_once("pdo.php");
+		$bd = connection();
+
+		$result = $bd->query("SELECT idplayer FROM participateteam WHERE idparty=$idParty AND idteam=$idTeam ORDER BY -score");
+		return $result;
+	}
+
+	function updateScorePartyTeam($idplayer,$idparty,$scoreToAdd)
+	#Parameter: id of the player, the new points to add
+	#result : void, add scoreToAdd to the current ScoreParty
+	{
+		require_once("pdo.php");
+		$bd = connexion();
+
+		$bd->exec("UPDATE participate SET scoreParty = scoreparty + $scoreToAdd WHERE idparty ='". $idparty ."' AND idplayer='".$idplayer."' ");
+	}
+
 ?>

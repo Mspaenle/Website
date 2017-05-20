@@ -20,8 +20,21 @@
     $bd = connection();
 
     $result = $bd->query("SELECT idparty FROM party WHERE nameparty=$name");
-    return $result['idparty'];
+		$ans=$result->fetch();
+    return $ans['idparty'];
   }
+
+	function getNameParty($idparty)
+	#parameter : the id of the party
+	#result : the name of the party
+	{
+		require_once("pdo.php");
+    $bd = connection();
+
+    $result = $bd->query("SELECT nameparty FROM party WHERE idparty='".$idparty."'");
+		$ans=$result->fetch();
+    return $ans['nameparty'];		
+	}
 
   function teamParty($idparty)
   #parameter: idparty
