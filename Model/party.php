@@ -30,8 +30,9 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT team FROM party WHERE idparty='".$idParty."'");
-    return $result['team'];
+    $result = $bd->query("SELECT team FROM party WHERE idparty='".$idparty."'");
+		$ans=$result->fetch();
+    return $ans['team'];
   }
 
   function getNbPlayers($idParty)

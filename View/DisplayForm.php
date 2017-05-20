@@ -11,12 +11,12 @@
     <title> Players </title>
 
     <script type="text/javascript">
-                var i = 0;
+                var i = 1;
 
                 function addPlayer(j,bool)
                 {
                     if(!bool){
-                      if (i < j-1 )
+                      if (i <= j )
                       {
                           var newRow = document.createElement('tr');
                           newRow.innerHTML = '<td> <input type="text" name="PlayerName_'+i+'" ></td>';
@@ -25,7 +25,7 @@
                       }
                     }
                     else{
-                      if (i < j-1 )
+                      if (i <= j )
                       {
                           var newRow = document.createElement('tr');
                           newRow.innerHTML = '<td> <input type="text" name="PlayerName_'+i+'" ></td><td> <input type="text" name="PlayerTeam_'+i+'"></td>';
@@ -57,20 +57,12 @@
               <tr>
                   <th>Name</th>
                   <?php if($Team){?><th>Team Number</th><?php }?>
+                  <th>
+                    <?php $nbpl=0; ?>
+                    <?php $i = $nbPlayers; ?>
+                    <input type="button" id="add_players()" onClick="addPlayer(<?php echo $i;?>,<?php echo $Team;?>)" value="+" />
+                  </th>
               </tr>
-              <tbody>
-                <tr>
-                  <?php $nbpl=0; ?>
-                  <td>
-                    <input type="text">
-                  </td>
-                  <?php if($Team){?><td><input type="text" name="TeamNumber"></td><?php }?>
-                  <td>
-                   <?php $i = $nbPlayers; ?>
-                   <input type="button" id="add_players()" onClick="addPlayer(<?php echo $i;?>,<?php echo $Team;?>)" value="+" />
-                  </td>
-                </tr>
-              </tbody>
             </table>
 
           <input type="submit" value="Submit" class="btn btn-default">

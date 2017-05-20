@@ -18,7 +18,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT idplayer FROM participateteam WHERE idparty=$idParty");
+    $result = $bd->query("SELECT pl1.idplayer, pl1.name, pl1.score, p1.scoreparty FROM participateteam as p1, player as pl1 WHERE idparty=$idParty AND p1.idplayer=pl1.idplayer");
     return $result;
   }
 

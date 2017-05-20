@@ -18,10 +18,9 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $result = $bd->query("SELECT idPlayer FROM player WHERE name=$name");
-    $player=$result->fetch();
-    $result->closeCursor();
-    return $player['idPlayer'];
+    $result = $bd->query("SELECT idplayer FROM player WHERE name='".$name."'");
+		$ans=$result->fetch();
+    return $ans['idplayer'];
   }
 
   function getListPlayer($id)

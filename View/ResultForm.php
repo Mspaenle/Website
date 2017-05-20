@@ -20,28 +20,27 @@
 
       <form action = "current_party.php" method="post">
         <table class="table table-hover rankTab">
-        	<thead>
-        		<tr>
-        			<th> Name </th>
-        			<th> Current score </th>
-        			<th> New points </th>
-        		</tr>
-        	</thead>
-
-        	<tbody>
-        		<?php
-        		while($donnees = $answer->fetch())
-        		{
-        		?>
-        		<tr>
-        			<td> <?php echo $donnees['name']; ?></td>
-        			<td> <?php echo $donnees['score']; ?></td>
-          		<td> <input type="text" name="<?php $donnees['idPlayer']; ?>"> </td>
-          	</tr>
-          	<?php
-          	}
-          	$answer->closeCursor();
-          	?>
+          <thead>
+            <tr>
+              <th> Name </th>
+              <th> Current score </th>
+              <th> New points </th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+            while($donnees = $answer->fetch())
+            {
+            ?>
+            <tr>
+              <td> <?php echo $donnees['name']; ?></td>
+              <td> <?php echo $donnees['scoreparty']; ?></td>
+              <td> <input type="text" name="<?php $donnees['idPlayer']; ?>"> </td>
+            </tr>
+            <?php
+            }
+            $answer->closeCursor();
+            ?>
           </tbody>
         </table>
         <input type="submit" value="Update" class="btn btn-default">
