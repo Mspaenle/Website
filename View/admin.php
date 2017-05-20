@@ -21,11 +21,16 @@
 <div class="center-w">
 
     <div class="container">
-      <form method="post" action="add_game.php">
-        <label for="admin-log-in" class="col-sm-2 col-form-label"> Administrator password</label>
-        <div class="col-sm-10 col-md-8 col-lg-8">
-          <input type="password" class="form-control" name="nbPlayers" required>
+      <form method="post" action="admin_choice.php">
+        <label for="partyName" class="col-sm-2 col-form-label">Admin :</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="idAdmin" required>
         </div>
+        <label for="admin-log-in" class="col-sm-2 col-form-label"> Administrator password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" name="mdpAdmin" required>
+        </div>
+
         <input type="submit" value="Log-in" class="btn btn-default">
       </form>
     </div>

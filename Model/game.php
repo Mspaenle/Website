@@ -42,4 +42,13 @@
     return $result;
   }
 
+  function rmGame($idgame)
+  #Parameter : id of the game to remove
+  {
+    require_once("pdo.php");
+    $bd = connection();
+
+    $bd->exec("DELETE FROM game WHERE idgame ='". $idgame ."'");  
+  }
+
  ?>
