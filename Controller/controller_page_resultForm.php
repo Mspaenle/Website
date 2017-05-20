@@ -7,6 +7,7 @@
 	$Party = $_COOKIE['party'];
 	$nb = getNbPlayers($Party);
 	$Team = teamParty($Party);
+	$nameParty = getNameParty($Party);
 
 	if($Team){ // If the new player is in a team
 		$i=1;

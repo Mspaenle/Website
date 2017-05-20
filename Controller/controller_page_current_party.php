@@ -17,17 +17,11 @@
 		$ans=getPlayer($Party);
 		while($donnees=$ans->fetch()){
 			$idplayer = $donnees['idplayer'];
-			echo $idplayer;
-			echo "AND";
 			$score=$_POST[$idplayer];
-			echo $score;
-			echo "FIN";
 			updateScoreParty($idplayer,$Party,$score);
 		}
 		$answer=getPlayer($Party);
 	}
-
-
 
 	require_once("View/current_party.php");
 

@@ -46,7 +46,7 @@
         <input type="submit" value="Update" class="btn btn-default">
       </form>
 
-      <a href="stats.php" class="btn btn-default">Finish</a>
+      <a href="result_party.php" class="btn btn-default">Finish</a>
 
     </div>
       <?php include("foot.php");?>

@@ -29,7 +29,7 @@
 		require_once("pdo.php");
 		$bd = connection();
 
-		$result = $bd->query("SELECT pl1.idplayer, pl1.name, pl1.score, p1.scoreparty FROM participate as p1, player as pl1 WHERE idparty=$idParty AND p1.idplayer=pl1.idplayer ORDER BY -scoreParty");
+		$result = $bd->query("SELECT pl1.idplayer, pl1.name as name, pl1.score, p1.scoreparty as scoreparty FROM participate as p1, player as pl1 WHERE idparty=$idParty AND p1.idplayer=pl1.idplayer ORDER BY -scoreParty");
 		return $result;
 	}
 

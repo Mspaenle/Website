@@ -23,17 +23,6 @@
     return $ans['idplayer'];
   }
 
-  function getListPlayer($id)
-  #Parameter: list of id
-  #result: list of players
-  {
-    require_once("pdo.php");
-    $bd = connection();
-
-    $result = $bd->query("SELECT * FROM player WHERE idplayer in $id");
-    return $result;
-  }
-
   function rankingPlayer()
   #Result : the list of players ordered by score
   {
@@ -51,8 +40,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-		$bd->execute("UPDATE player SET score = score +$scoreToAdd WHERE email =$iD");
-    $update->execute();
+		$bd->exec("UPDATE player SET score = score + $scoreToAdd WHERE idplayer='".$idPlayer."'");
   }
 
 ?>

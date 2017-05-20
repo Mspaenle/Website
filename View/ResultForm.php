@@ -35,7 +35,7 @@
             <tr>
               <td> <?php echo $donnees['name']; ?></td>
               <td> <?php echo $donnees['scoreparty']; ?></td>
-              <td> <input type="text" name="<?php $donnees['idPlayer']; ?>"> </td>
+              <td> <input type="text" name="<?php echo $donnees['idPlayer']; ?>"> </td>
             </tr>
             <?php
             }
@@ -46,7 +46,7 @@
         <input type="submit" value="Update" class="btn btn-default">
       </form>
 
-      <a href="stats.php" class="btn btn-default">Finish</a>
+      <a href="result_party.php" class="btn btn-default">Finish</a>
 
     </div>
 
