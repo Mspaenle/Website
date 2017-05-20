@@ -8,24 +8,6 @@
   $nameParty = getNameParty($Party);
   $Team= teamParty($Party);
 	$nb = getNbPlayers($Party);
-
-// Last update of score party
-  if($Team){
-		$ans=getPlayerParty($Party);
-	}
-	else{
-		$ans=getPlayer($Party);
-		while($donnees=$ans->fetch()){
-			$idplayer = $donnees['idplayer'];
-      echo $idplayer;
-      echo " and ";
-			$score=$_POST[$idplayer];
-			echo $score;
-			echo "FIN";
-			updateScoreParty($idplayer,$Party,$score);
-		}
-	}
-
 //score player update
   if($Team){
     $answer=getRankPlayerParty($Party);
@@ -40,8 +22,7 @@
     $answer=getRankPlayer($Party);
   }
 
-//DELETE COOKIES
-
+  setcookie("party", $idParty, time()-3600,"/");
   require_once("View/result_party.php");
 
 ?>

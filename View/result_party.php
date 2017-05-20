@@ -15,7 +15,7 @@
     <?php include("nav.php"); ?>
     <div class="center-w">
       <div class="page-header">
-        <h1 class ="display-3 text-center">WHo won ? </h1>
+        <h1 class ="display-3 text-center">Who won ? </h1>
         <h2 class ="display-2 text-center">Party <?php echo $nameParty;?></h2>
       </div>
 

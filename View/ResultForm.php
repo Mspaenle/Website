@@ -35,7 +35,7 @@
             <tr>
               <td> <?php echo $donnees['name']; ?></td>
               <td> <?php echo $donnees['scoreparty']; ?></td>
-              <td> <input type="text" name="<?php echo $donnees['idPlayer']; ?>"> </td>
+              <td> <input type="text" name="<?php echo $donnees['idplayer']; ?>"> </td>
             </tr>
             <?php
             }

@@ -18,12 +18,12 @@
 			$PT = $_POST[$t]; // Team player
 			$exist = getIdPlayer($name); // get the id of the player
 			if(!is_null($exist)){
-				//addParticipationTeam($exist,$Party,$PT);
+				addParticipationTeam($exist,$Party,$PT);
 			}
 			else{
-				//addPlayer($name);
+				addPlayer($name);
 				$exist = getIdPlayer($name);
-				//addParticipationTeam($exist,$Party,$PT);
+				addParticipationTeam($exist,$Party,$PT);
 			}
 			$i++;
 		}
