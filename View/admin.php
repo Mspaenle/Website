@@ -12,7 +12,7 @@
 
   <body>
 
-    <?php include("nav.php"); ?>
+    <?php include("nav.php");?>
 <div class="center-w">
     <div class="page-header">
       <h1 class ="display-3 text-center">Log-in as an admin</h1>

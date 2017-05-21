@@ -22,7 +22,7 @@
     $answer=getRankPlayer($Party);
   }
 
-  setcookie("party", $idParty, time()-3600,"/");
+  setcookie("party", $Party, time()-3600,"/");
   require_once("View/result_party.php");
 
 ?>

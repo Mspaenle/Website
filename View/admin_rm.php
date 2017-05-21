@@ -20,7 +20,7 @@
         <h2 class ="display-2 text-center">Remove a game</h2>
       </div>
 
-      <form method="post" action="controller_rm_game.php">
+      <form method="post" action="rm_game.php">
         <label class="col-sm-2 col-form-label">Game :</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" name="game" required>

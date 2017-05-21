@@ -7,7 +7,7 @@
       require_once("pdo.php");
       $bd = connection();
 
-      $add = $bd->prepare( "INSERT INTO team (namegame,description,image) VALUES (?,?,?)");
+      $add = $bd->prepare( "INSERT INTO game (namegame,description,image) VALUES (?,?,?)");
       $add->execute(array($name,$descr,$image));
   }
 
@@ -48,7 +48,7 @@
     require_once("pdo.php");
     $bd = connection();
 
-    $bd->exec("DELETE FROM game WHERE idgame ='". $idgame ."'");  
+    $bd->exec("DELETE FROM game WHERE idgame ='". $idgame ."'");
   }
 
  ?>
