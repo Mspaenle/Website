@@ -26,7 +26,7 @@
           <div class ="form-group row">
             <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="pName" placeholder="Amy's Bday BREAck" value=""<?php if(!empty($_POST['pName'])){ echo htmlspecialchars($_POST['pName'], ENT_QUOTES);}"" ?> required>
+              <input type="text" class="form-control" name="pName" placeholder="Mario Roulette" value=""<?php if(!empty($_POST['pName'])){ echo htmlspecialchars($_POST['pName'], ENT_QUOTES);}"" ?> required>
             </div>
           </div>
 
