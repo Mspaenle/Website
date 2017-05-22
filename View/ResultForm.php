@@ -37,7 +37,7 @@
             <tr>
               <td> <?php echo $donnees['name']; ?></td>
               <td> <?php echo $donnees['scoreparty']; ?></td>
-              <td> <input type="text" name="<?php echo $donnees['idplayer']; ?>"> </td>
+              <td> <input type="text" name="<?php echo $donnees['idplayer']; ?>" value=""<?php if(!empty($_POST[$donnees['idplayer']])){ echo htmlspecialchars($_POST[$donnees['idplayer']], ENT_QUOTES);}"" ?>> </td>
             </tr>
             <?php
             }

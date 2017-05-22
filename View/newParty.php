@@ -26,7 +26,7 @@
           <div class ="form-group row">
             <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="pName" placeholder="Amy's Bday" required>
+              <input type="text" class="form-control" name="pName" placeholder="Amy's Bday" value=""<?php if(!empty($_POST['pName'])){ echo htmlspecialchars($_POST['pName'], ENT_QUOTES);}"" ?> required>
             </div>
           </div>
 
@@ -34,7 +34,7 @@
             <label for="game"  class="col-sm-2 col-form-label">Which game do you want to play ?</label>
             <div class="col-sm-10">
               <select name="game" class="form-control" required>
-                <option value="Fifa 17">Fifa 17</option>
+                <option value="Fifa17">Fifa 17</option>
                 <option value="Mario Party">Mario Party</option>
                 <option value="Mario Kart">Mario Kart</option>
               </select>
@@ -45,7 +45,7 @@
           <div class ="form-group row">
             <label for="numberPlayers" class="col-sm-2 col-form-label">Number of players :</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="nbPlayers" placeholder="From 2 to 16" required>
+              <input type="text" class="form-control" name="nbPlayers" placeholder="From 2 to 16" value=""<?php if(!empty($_POST['nbPlayers'])){ echo htmlspecialchars($_POST['nbPlayers'], ENT_QUOTES);}"" ?>required>
             </div>
           </div>
 

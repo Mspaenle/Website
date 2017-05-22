@@ -27,14 +27,14 @@
           <div class ="form-group row">
             <label for="gameName" class="col-sm-2 col-form-label">Game :</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="nameGame" required>
+              <input type="text" class="form-control" name="nameGame" value=""<?php if(!empty($_POST['nameGame'])){ echo htmlspecialchars($_POST['nameGame'], ENT_QUOTES);}"" ?>required>
             </div>
           </div>
 
           <div class ="form-group row">
             <label for="gameDescr"  class="col-sm-2 col-form-label">Description</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="descr" required>
+              <input type="text" class="form-control" name="descr" value=""<?php if(!empty($_POST['descr'])){ echo htmlspecialchars($_POST['descr'], ENT_QUOTES);}"" ?> required>
             </div>
           </div>
 
@@ -42,7 +42,7 @@
           <div class ="form-group row">
             <label for="imageGame" class="col-sm-2 col-form-label">Image (URL) :</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="urlImage" required>
+              <input type="text" class="form-control" name="urlImage" value=""<?php if(!empty($_POST['urlImage'])){ echo htmlspecialchars($_POST['urlImage'], ENT_QUOTES);}"" ?> required>
             </div>
           </div>
 
@@ -50,7 +50,7 @@
 
           <label class="col-sm-2 col-form-label">Administrator password :</label>
           <div class="col-sm-10">
-            <input type="password" class="form-control" name="mdpAdmin" required>
+            <input type="password" class="form-control" name="mdpAdmin" value=""<?php if(!empty($_POST['mdpAdmin'])){ echo htmlspecialchars($_POST['mdpAdmin'], ENT_QUOTES);}"" ?>required>
           </div>
 
           <div class="container">

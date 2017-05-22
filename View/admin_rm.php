@@ -25,11 +25,11 @@
       <form method="post" action="rm_game.php">
         <label class="col-sm-2 col-form-label">Game :</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" name="game" required>
+          <input type="text" class="form-control" name="game" value=""<?php if(!empty($_POST['game'])){ echo htmlspecialchars($_POST['game'], ENT_QUOTES);}"" ?>required>
         </div>
         <label class="col-sm-2 col-form-label">Administrator password :</label>
         <div class="col-sm-10">
-          <input type="password" class="form-control" name="mdpAdmin" required>
+          <input type="password" class="form-control" name="mdpAdmin" value=""<?php if(!empty($_POST['mdpAdmin'])){ echo htmlspecialchars($_POST['mdpAdmin'], ENT_QUOTES);}"" ?> required>
         </div>
 
         <input type="submit" value="Confirm" class="btn btn-default">
