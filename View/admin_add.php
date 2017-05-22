@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="View/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/css/heroic-features.css" />
+    <script src="js/bootstrap.min.js"></script>
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
     <title> Admin - Add a game </title>
