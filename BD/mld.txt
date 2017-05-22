@@ -1,0 +1,7 @@
+Administrator (idadmin, mdp)
+Game (idgame, namegame, description, image)
+Party (idparty, nameparty, team, nbplayer, #idgame)
+Player (idplayer, name, score)
+Team (idteam, teamname)
+Participate (#idplayer, #idparty, scoreparty)
+ParticipateTeam (#idteam, #idparty, #idplayer, scoreparty)  
