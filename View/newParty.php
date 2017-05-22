@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="View/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="View/css/heroic-features.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/style.css">
     <title> Start a new tournament </title>
@@ -58,7 +60,7 @@
               </label>
               <label class="form-check-label ">
                 <input class="form-check-input" type="radio" name="typeParty" id="team" value="1" class="group-required">
-                By Team
+                By Team (not available)
               </label>
             </div>
           </fieldset>
@@ -69,7 +71,7 @@
       </div>
     </div>
 
-      <?php include("foot.php"); ?>
+    <?php include("foot.php"); ?>
 
   </body>
 </html>
