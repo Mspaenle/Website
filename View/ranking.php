@@ -22,7 +22,7 @@
     <div class="center-w">
 
         <div class="page-header">
-          <h1 class ="display-3 text-center">Ranking</h1>
+          <h1 class ="display-3 text-center">Top 20</h1>
         </div>
 
         <table class="table table-hover rankTab">
@@ -37,7 +37,7 @@
           <tbody>
             <?php
             $i=1;
-            while($donnees = $answer->fetch())
+            while(i<=20 && $donnees = $answer->fetch())
             {
             ?>
             <tr>
