@@ -23,7 +23,7 @@
           <header class="jumbotron hero-spacer">
               <h1>Welcome</h1>
               <p>Come here whenever you want to organize a video game tournament with your friends.</p>
-              <p><a class="btn btn-primary btn-large" href="form-new-party/1">Start a tournament</a>
+              <p><a class="btn btn-primary btn-large" href="form-new-party-1">Start a tournament</a>
               </p>
           </header>
 
