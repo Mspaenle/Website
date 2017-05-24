@@ -23,14 +23,14 @@
 
       <div class="btn-group btn-group-justified" role="group" aria-label="...">
         <div class="btn-group" role="group">
-          <a href="admin_add.php" class="btn btn-primary" role="button">Add a Game</a>
+          <a href="admin-add-game" class="btn btn-primary" role="button">Add a Game</a>
         </div>
         <div class="btn-group" role="group">
-          <a href="admin_rm.php" class="btn btn-primary" role="button">Remove a Game</a>
+          <a href="admin-rm-game" class="btn btn-primary" role="button">Remove a Game</a>
         </div>
       </div>
       <div class="container">
-        <a href="admin_end.php" class="btn btn-default">Finish</a>
+        <a href="admin-end" class="btn btn-default">Finish</a>
       </div>
     </div>
 

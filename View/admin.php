@@ -23,7 +23,7 @@
 
 
       <div class="container">
-        <form method="post" action="admin_choice.php">
+        <form method="post" action="admin-page">
           <label for="partyName" class="col-sm-2 col-form-label">Login :</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" name="idAdmin" value=""<?php if(!empty($_POST['idAdmin'])){ echo htmlspecialchars($_POST['idAdmin'], ENT_QUOTES);}"" ?>required>

@@ -1,7 +1,7 @@
 <?php
 
-  require_once("Model/administrator.php");
-  require_once("Model/game.php");
+  require_once("../Model/administrator.php");
+  require_once("../Model/game.php");
 
   $idadmin = $_COOKIE['idadmin'];
   $game = $_POST['game'];
@@ -10,10 +10,10 @@
   $mdp = sha1($_POST['mdpAdmin']);
   if($mdp ==getMdp($idadmin)){
     rmGame($idgame);
-    require_once("admin_redirection.php");
+    require_once("../Controller/controller_page_admin_redirection.php");
   }
   else{
-    require_once("admin.php");
+    require_once("../Controller/controller_page_admin.php");
   }
 
  ?>
