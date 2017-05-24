@@ -2,7 +2,7 @@ Options +FollowSymlinks
 RewriteEngine on
 
 RewriteRule ^ranking$ /Controller/controller_page_ranking.php [L]
-RewriteRule ^home$ /Controller/controller_page_index.php [L]
+RewriteRule ^home$ /Controller/controller_page_home.php [L]
 RewriteRule ^list-games$ /Controller/controller_page_games.php [L]
 RewriteRule ^admin-log-in$ /Controller/controller_page_admin.php [L]
 RewriteRule ^admin-page$ /Controller/controller_page_admin_choice.php [L]

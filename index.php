@@ -1,11 +1,5 @@
-<html>
-<head>
-<title>Redirection en HTML</title>
+<?php
 
-<meta http-equiv="refresh" content="5; URL="http://projet-web-mahe.herokuapp.com/home"">
-</head>
+	require_once("Controller/controller_page_index.php");
 
-<body>
-</body>
-
-</html>
+?>
