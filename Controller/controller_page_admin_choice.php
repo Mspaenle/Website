@@ -1,6 +1,7 @@
 <?php
 
     require_once("../Model/administrator.php");
+    
     if(!isset($_COOKIE['idadmin'])){
       $id = $_POST['idAdmin'];
 
