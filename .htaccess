@@ -1,1 +1,4 @@
-RewriteRule "home(.*)$" "index.php" [L]
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^ranking$ /ranking.php [L]
