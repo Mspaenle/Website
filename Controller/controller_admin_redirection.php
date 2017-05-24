@@ -2,10 +2,10 @@
 
   if(isset($_COOKIE['idadmin'])){
     $redirection =1;
-    require_once("admin_choice.php");
+    require_once("../Controller/controller_page_admin_choice.php");
   }
   else{
-    require_once("admin.php");
+    require_once("../Controller/controller_page_admin.php");
   }
 
  ?>

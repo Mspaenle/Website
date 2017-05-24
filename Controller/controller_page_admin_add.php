@@ -1,5 +1,5 @@
 <?php
 
-  require_once("View/admin_add.php");
+  require_once("../View/admin_add.php");
 
  ?>
