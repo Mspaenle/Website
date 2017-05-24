@@ -49,7 +49,7 @@
         <input type="submit" value="Update" class="btn btn-default">
       </form>
 
-      <a href="update" class="btn btn-default">Finish</a>
+      <a href="result" class="btn btn-default">Finish</a>
 
     </div>
     <?php include("foot.php");?>
