@@ -1,8 +1,8 @@
 <?php
-	require_once("Model/player.php");
-	require_once("Model/party.php");
-	require_once("Model/participate.php");
-	require_once("Model/participateteam.php");
+	require_once("../Model/player.php");
+	require_once("../Model/party.php");
+	require_once("../Model/participate.php");
+	require_once("../Model/participateteam.php");
 
 	if(isset($_COOKIE['party'])){
 		$Party = $_COOKIE['party'];
@@ -23,10 +23,10 @@
 			$answer=getPlayer($Party);
 		}
 
-		require_once("View/current_party.php");
+		require_once("../View/current_party.php");
 	}
 	else{
-		require_once("View/no_current_party.php");
+		require_once("../View/no_current_party.php");
 	}
 
  ?>

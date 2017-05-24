@@ -21,7 +21,7 @@
         <h1 class ="display-3 text-center">Party <?php echo $nameParty;?></h1>
       </div>
 
-      <form action = "current_party.php" method="post">
+      <form action = "current-party" method="post">
         <table class="table table-hover rankTab">
           <thead>
             <tr>
@@ -49,7 +49,7 @@
         <input type="submit" value="Update" class="btn btn-default">
       </form>
 
-      <a href="result_party.php" class="btn btn-default">Finish</a>
+      <a href="update" class="btn btn-default">Finish</a>
 
     </div>
     <?php include("foot.php");?>

@@ -20,7 +20,7 @@
         <h1 class ="display-3 text-center">No party engaged</h1>
       </div>
 
-      <a href="index.php" class="btn btn-default">Home</a>
+      <a href="home" class="btn btn-default">Home</a>
 
     </div>
 

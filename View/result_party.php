@@ -48,7 +48,7 @@
           </tbody>
         </table>
 
-      <a href="index.php" class="btn btn-default">Home</a>
+      <a href="home" class="btn btn-default">Home</a>
 
     </div>
 

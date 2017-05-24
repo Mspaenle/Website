@@ -22,7 +22,7 @@
       </div>
 
       <div class ="container">
-        <form action="DisplayForm.php" method="post">
+        <form action="form-new-party/2" method="post">
           <div class ="form-group row">
             <label for="partyName" class="col-sm-2 col-form-label">Party :</label>
             <div class="col-sm-10">

@@ -1,8 +1,8 @@
 <?php
-  require_once("Model/player.php");
-  require_once("Model/party.php");
-  require_once("Model/participate.php");
-  require_once("Model/participateteam.php");
+  require_once("../Model/player.php");
+  require_once("../Model/party.php");
+  require_once("../Model/participate.php");
+  require_once("../Model/participateteam.php");
 
   $Party = $_COOKIE['party'];
   $nameParty = getNameParty($Party);
@@ -23,6 +23,6 @@
   }
 
   setcookie("party", $Party, time()-3600,"/");
-  require_once("View/result_party.php");
+  require_once("../View/result_party.php");
 
 ?>

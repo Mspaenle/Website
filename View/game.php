@@ -33,7 +33,7 @@
             <div class="caption">
               <h3><?php echo $donnees['namegame'];?></h3>
               <p><?php echo $donnees['description'];?></p>
-              <p><a href="#" class="btn btn-primary" role="button">More info (to come)</a> <a href="newParty.php" class="btn btn-default" role="button">Play this game</a></p>
+              <p><a href="#" class="btn btn-primary" role="button">More info (to come)</a> <a href="form-new-party/1" class="btn btn-default" role="button">Play this game</a></p>
             </div>
           </div>
         </div>

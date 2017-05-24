@@ -1,8 +1,8 @@
 <?php
-	require_once("Model/player.php");
-	require_once("Model/party.php");
-	require_once("Model/participate.php");
-	require_once("Model/participateteam.php");
+	require_once("../Model/player.php");
+	require_once("../Model/party.php");
+	require_once("../Model/participate.php");
+	require_once("../Model/participateteam.php");
 
 	$Party = $_COOKIE['party'];
 	$nb = getNbPlayers($Party);
@@ -48,6 +48,6 @@
 		$answer=getPlayer($Party);
 	}
 
-	require("View/ResultForm.php");
+	require("../View/ResultForm.php");
 
 ?>
