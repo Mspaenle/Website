@@ -1,5 +1,11 @@
-<?php
+<html>
+<head>
+<title>Redirection en HTML</title>
 
-	require_once("home");
+<meta http-equiv="refresh" content="5; URL="home"">
+</head>
 
-?>
+<body>
+</body>
+
+</html>

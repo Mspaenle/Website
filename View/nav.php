@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="home">Home</a></li>
-        <li><a href="games">Video Games</a></li>
+        <li><a href="listGames">Video Games</a></li>
         <li><a href="ranking">Ranking</a></li>
         <li><a href="form-new-party-1">Start a tournament</a></li>
         <li><a href="current_party">Current party</a></li>
