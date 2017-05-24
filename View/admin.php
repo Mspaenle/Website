@@ -24,11 +24,11 @@
 
       <div class="container">
         <form method="post" action="admin_choice.php">
-          <label for="partyName" class="col-sm-2 col-form-label">Admin :</label>
+          <label for="partyName" class="col-sm-2 col-form-label">Login :</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" name="idAdmin" value=""<?php if(!empty($_POST['idAdmin'])){ echo htmlspecialchars($_POST['idAdmin'], ENT_QUOTES);}"" ?>required>
           </div>
-          <label for="admin-log-in" class="col-sm-2 col-form-label"> Administrator password</label>
+          <label for="admin-log-in" class="col-sm-2 col-form-label">Password :</label>
           <div class="col-sm-10">
             <input type="password" class="form-control" name="mdpAdmin" value=""<?php if(!empty($_POST['mdpAdmin'])){ echo htmlspecialchars($_POST['mdpAdmin'], ENT_QUOTES);}"" ?>required>
           </div>

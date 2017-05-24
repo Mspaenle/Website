@@ -3,7 +3,7 @@ function connection()
   {
     try
     {
-      $bd = new PDO('pgsql:host=ec2-46-137-97-169.eu-west-1.compute.amazonaws.com;port=5432;dbname=deevnl4b13gbb;user=kqsiwdgqnmwmdu;password=044fc4a945590ac0155e11df5afd188b3e42ff0623f57eb7db88da187e43319d');
+      $bd = new PDO('pgsql:host=ec2-54-228-189-223.eu-west-1.compute.amazonaws.com;port=5432;dbname=d9quk2i8qftthv;user=yucwnwjmchppyb;password=3a13007b84b9dde31bb958e914caee9770b50386b10b92b76659c6002215f46c');
     }
     catch (Exception $e)
     {

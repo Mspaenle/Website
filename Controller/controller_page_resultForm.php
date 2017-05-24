@@ -34,7 +34,6 @@
 		while($i<=$nb){
 			$a="PlayerName_".$i;
 			$name = $_POST[$a];
-
 			$exist = getIdPlayer($name);
 			if(!is_null($exist)){
 				addParticipation($exist,$Party);
