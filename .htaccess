@@ -1,4 +1,4 @@
 Options +FollowSymlinks
 RewriteEngine on
 
-RewriteRule ^ranking$ /Controller/controller_page_ranking.php [L]
+RewriteRule ^ranking$ /ranking.php [L]
