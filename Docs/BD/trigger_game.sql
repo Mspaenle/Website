@@ -5,6 +5,10 @@ BEGIN
   WHERE participate.idparty IN (SELECT idparty
 				FROM party
 				WHERE party.idgame=OLD.idgame);
+  DELETE FROM participateteam
+  WHERE participateteam.idparty IN (SELECT idparty
+      				FROM party
+      				WHERE party.idgame=OLD.idgame);
   DELETE FROM party
   WHERE party.idgame=OLD.idgame;
   RETURN OLD;

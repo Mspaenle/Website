@@ -42,7 +42,7 @@
           <div class ="form-group row">
             <label for="imageGame" class="col-sm-2 col-form-label">Image (URL) :</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="urlImage" value=""<?php if(!empty($_POST['urlImage'])){ echo htmlspecialchars($_POST['urlImage'], ENT_QUOTES);}"" ?> required>
+              <input type="url" class="form-control" name="urlImage" value=""<?php if(!empty($_POST['urlImage'])){ echo htmlspecialchars($_POST['urlImage'], ENT_QUOTES);}"" ?> required>
             </div>
           </div>
 
