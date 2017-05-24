@@ -42,7 +42,7 @@
                   {
                   ?>
                   <div class="container">
-                            <div class="item"><a href="list-games.php"><img src="<?php echo $donnees['image']; ?>" alt="image" class="img-index"></a></div>
+                            <div class="item"><a href="list-games"><img src="<?php echo $donnees['image']; ?>" alt="image" class="img-index"></a></div>
                   </div>
                   <?php
                   }
