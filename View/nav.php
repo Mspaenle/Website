@@ -13,7 +13,7 @@
         <li><a href="list-games">Video Games</a></li>
         <li><a href="ranking">Ranking</a></li>
         <li><a href="form-new-party-1">Start a tournament</a></li>
-        <li><a href="current_party">Current party</a></li>
+        <li><a href="current-party">Current party</a></li>
         <li><a href="admin-log-in">Add a game</a></li>
       </ul>
     </div>
