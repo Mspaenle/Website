@@ -1,8 +1,7 @@
 <?php
 
   if(isset($_COOKIE['idadmin'])){
-    $redirection =1;
-    require_once("../Controller/controller_page_admin_choice.php");
+    require_once("page-admin");
   }
   else{
     require_once("../Controller/controller_page_admin.php");
