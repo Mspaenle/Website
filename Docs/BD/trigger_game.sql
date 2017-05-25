@@ -1,3 +1,7 @@
+/*
+When deleting a game, delete all the parties and participations for the game
+*/
+
 CREATE OR REPLACE FUNCTION delete_game_participate() RETURNS TRIGGER AS $delete_game_participate$
 DECLARE
 BEGIN

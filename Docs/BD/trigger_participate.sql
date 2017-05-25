@@ -1,3 +1,8 @@
+/*
+When deleting a participation, substract the score from the player score
+*/
+
+
 CREATE OR REPLACE FUNCTION delete_participate_score() RETURNS TRIGGER AS $delete_game_participate$
 DECLARE
 BEGIN
