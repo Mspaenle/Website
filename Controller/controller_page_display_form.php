@@ -8,11 +8,17 @@
 	$idGame = getIdGame($Game);
 	$nbPlayers=$_POST['nbPlayers'];
 	$Team=$_POST['typeParty'];
-	addParty($nameParty,$idGame,$Team,$nbPlayers);
-	$idParty=getParty($nameParty);
 
-	setcookie("party", $idParty, time()+(3600*24),"/");
+	if(is_string($game)&&is_integer($nbPlayers)&&is_int($Team)){
+		addParty($nameParty,$idGame,$Team,$nbPlayers);
+		$idParty=getParty($nameParty);
 
-	require_once("../View/DisplayForm.php");
+		setcookie("party", $idParty, time()+(3600*24),"/");
+
+		require_once("../View/DisplayForm.php");
+	}
+	else {
+		require_once("form-new-party-1");
+	}
 
 ?>

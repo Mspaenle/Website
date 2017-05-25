@@ -18,7 +18,9 @@
 			while($donnees=$ans->fetch()){
 				$idplayer = $donnees['idplayer'];
 				$score=$_POST[$idplayer];
-				updateScoreParty($idplayer,$Party,$score);
+				if(is_int($score)){
+					updateScoreParty($idplayer,$Party,$score);
+				}
 			}
 			$answer=getPlayer($Party);
 		}

@@ -5,15 +5,20 @@
 
   $idadmin = $_COOKIE['idadmin'];
   $game = $_POST['game'];
-  $idgame = getIdGame($game);
+  if(is_string($game)){
+    $idgame = getIdGame($game);
 
-  $mdp = sha1($_POST['mdpAdmin']);
-  if($mdp ==getMdp($idadmin)){
-    rmGame($idgame);
-    require_once("../Controller/controller_admin_redirection.php");
+    $mdp = sha1($_POST['mdpAdmin']);
+    if($mdp ==getMdp($idadmin)){
+      rmGame($idgame);
+      require_once("../Controller/controller_admin_redirection.php");
+    }
+    else{
+      require_once("../Controller/controller_page_admin.php");
+    }
   }
   else{
-    require_once("../Controller/controller_page_admin.php");
+    require_once("../Controller/controller_page_admin_rm.php");
   }
 
  ?>
