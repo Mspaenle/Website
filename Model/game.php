@@ -32,6 +32,18 @@
       return $ans['idgame'];
   }
 
+  function getGameById($id)
+  # Parameter : id of the game
+  # Return the game with the id in parameter
+  {
+    require_once("pdo.php");
+    $bd = connection();
+
+    $result = $bd->query("SELECT * FROM game WHERE idgame='".$id."'");
+    $ans=$result->fetch();
+    return $ans;
+  }
+
   function getGames()
   #result: return the list of all the games
   {

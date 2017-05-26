@@ -23,24 +23,15 @@
       </div>
 
       <div class="row">
-        <?php
-        while($donnees=$answer->fetch())
-        {
-        ?>
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="<?php echo $donnees['image'];?>" alt="Game">
+            <img src="<?php echo $game['image'];?>" alt="Game">
             <div class="caption">
-              <h3><?php echo $donnees['namegame'];?></h3>
-              <p><?php echo $donnees['description'];?></p>
-              <p><a href="../Controllet/controller_display_game.php?idGame=<?php echo $donnees['idgame'] ?>" class="btn btn-primary" role="button">More infos</a><a href="form-new-party-1" class="btn btn-default" role="button">Play this game</a></p>
+              <h3><?php echo $game['namegame'];?></h3>
+              <p><?php echo $game['description'];?></p>
             </div>
           </div>
         </div>
-        <?php
-        }
-        $answer->closeCursor();
-        ?>
       </div>
     </div>
 
