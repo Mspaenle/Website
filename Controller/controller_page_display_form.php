@@ -18,7 +18,7 @@
 		require_once("../View/DisplayForm.php");
 	}
 	else {
-		require_once("form-new-party-1");
+		require_once("../Controller/controller_page_newParty.php");
 	}
 
 ?>
