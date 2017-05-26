@@ -22,19 +22,19 @@
         <h1 class ="display-3 text-center">Video games proposed</h1>
       </div>
 
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <img src="../<?php echo $game['image'];?>" alt="Game">
-          <div class="caption">
-            <h3><?php echo $game['namegame'];?></h3>
-            <p><?php echo $game['description'];?></p>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="../<?php echo $game['image'];?>" alt="Game">
+            <div class="caption">
+              <h3><?php echo $game['namegame'];?></h3>
+              <p><?php echo $game['description'];?></p>
+            </div>
           </div>
-          </div>
+        </div>
       </div>
-      <a href="\list-games" class="btn btn-default" role="button">Back to games</a>
+      <a href="\games" class="btn btn-default" role="button">Back to games</a>
     </div>
-
-
 
     <?php include("foot.php"); ?>
 
