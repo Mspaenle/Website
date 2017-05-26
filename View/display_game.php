@@ -14,7 +14,6 @@
 
   <body class="list-group">
 
-    <?php include("nav.php"); ?>
 
     <div class="center-w">
 
@@ -23,17 +22,15 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
+        <div class="col-sm-6 col-md-6">
             <img src="../<?php echo $game['image'];?>" alt="Game">
-            <div class="caption">
-              <h3><?php echo $game['namegame'];?></h3>
-              <p><?php echo $game['description'];?></p>
-            </div>
-          </div>
+        </div>
+        <div class="caption col-sm-6 col-md-6">
+            <h3><?php echo $game['namegame'];?></h3>
+            <p><?php echo $game['description'];?></p>
         </div>
       </div>
-      <a href="\games" class="btn btn-default" role="button">Back to games</a>
+      <a href="\list-games" class="btn btn-default" role="button">Back to games</a>
     </div>
 
     <?php include("foot.php"); ?>
