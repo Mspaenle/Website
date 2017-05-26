@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
-            <img src="<?php echo $game['image'];?>" alt="Game">
+            <img src="../<?php echo $game['image'];?>" alt="Game">
             <div class="caption">
               <h3><?php echo $game['namegame'];?></h3>
               <p><?php echo $game['description'];?></p>

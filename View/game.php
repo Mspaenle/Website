@@ -33,7 +33,7 @@
             <div class="caption">
               <h3><?php echo $donnees['namegame'];?></h3>
               <p><?php echo $donnees['description'];?></p>
-              <p><a href="list-games/<?php echo $donnees['idgame'] ?>" class="btn btn-primary" role="button">More infos</a><a href="form-new-party-1" class="btn btn-default" role="button">Play this game</a></p>
+              <p><a href="games/<?php echo $donnees['idgame'] ?>" class="btn btn-primary" role="button">More infos</a><a href="form-new-party-1" class="btn btn-default" role="button">Play this game</a></p>
             </div>
           </div>
         </div>
