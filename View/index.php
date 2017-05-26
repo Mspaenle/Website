@@ -9,7 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	<link rel="stylesheet" href="View/css/style.css">
   	<link rel="stylesheet" href="View/styleM.css">
-    <title> Moys Games </title>
+    <title> Games Tournament</title>
   </head>
 
   <body class="list-group go-to-top">
