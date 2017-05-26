@@ -22,7 +22,6 @@
         <h1 class ="display-3 text-center">Video games proposed</h1>
       </div>
 
-      <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
             <img src="../<?php echo $game['image'];?>" alt="Game">
@@ -32,9 +31,9 @@
             </div>
           </div>
         </div>
-        <a href="list-games" class="btn btn-default" role="button">Back to games</a>
       </div>
-    </div>
+      <a href="list-games" class="btn btn-default" role="button">Back to games</a>
+
 
     <?php include("foot.php"); ?>
 
