@@ -14,8 +14,6 @@
 
   <body class="list-group">
 
-    <?php include("nav.php"); ?>
-
     <div class="center-w">
 
       <div class="page-header">
@@ -32,6 +30,7 @@
             </div>
           </div>
         </div>
+        <a href="list-games" class="btn btn-default" role="button">Back to games</a>
       </div>
     </div>
 
