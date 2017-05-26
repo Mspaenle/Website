@@ -22,7 +22,7 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-4 col-md-4">
             <img src="../<?php echo $game['image'];?>" alt="Game">
         </div>
         <div class="caption col-sm-6 col-md-6">
