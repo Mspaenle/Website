@@ -8,7 +8,7 @@
   $nameParty = getNameParty($Party);
   $Team= teamParty($Party);
 	$nb = getNbPlayers($Party);
-  
+
   if($Team){
     $answer=getRankPlayerParty($Party);
   }
